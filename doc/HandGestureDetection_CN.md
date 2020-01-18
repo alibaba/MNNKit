@@ -4,7 +4,7 @@
 
 ## 检测内容
 
-####1. 人手位置
+#### 1. 人手位置
 
 - 人手位置的矩形坐标
 - 置信度
@@ -76,7 +76,7 @@ public synchronized void release()
 
 #### 附：参数说明
 
-#####<span id="format">支持输入的数据格式</span>
+##### <span id="format">支持输入的数据格式</span>
 
 ```java
 public enum MNNCVImageFormat {
