@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.alibaba.android.mnnkit.demo.MainActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardCornerRadius="4dp">
+
+        <TextView
+            android:text="人脸检测"
+            android:textSize="18dp"
+            android:padding="20dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:onClick="onFaceDetection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardCornerRadius="4dp">
+
+        <TextView
+            android:text="手势识别"
+            android:textSize="18dp"
+            android:padding="20dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:onClick="onHandGestureDetection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardCornerRadius="4dp">
+
+        <TextView
+            android:text="人像分割"
+            android:textSize="18dp"
+            android:padding="20dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:onClick="onPortraitSegmentation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

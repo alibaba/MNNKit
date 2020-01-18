@@ -1,0 +1,43 @@
+PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - MNN (0.2.1.7)
+  - MNNFaceDetection (0.0.1):
+    - MNN (= 0.2.1.7)
+    - MNNKitCore (~> 0.0.2)
+  - MNNHandGestureDetection (0.0.1):
+    - MNN (= 0.2.1.7)
+    - MNNKitCore (~> 0.0.2)
+  - MNNKitCore (0.0.2):
+    - FMDB (= 2.7.5)
+    - MNN (= 0.2.1.7)
+  - MNNPortraitSegmentation (0.0.1):
+    - MNN (= 0.2.1.7)
+    - MNNKitCore (~> 0.0.2)
+
+DEPENDENCIES:
+  - MNNFaceDetection (~> 0.0.1)
+  - MNNHandGestureDetection (~> 0.0.1)
+  - MNNPortraitSegmentation (~> 0.0.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FMDB
+    - MNN
+    - MNNFaceDetection
+    - MNNHandGestureDetection
+    - MNNKitCore
+    - MNNPortraitSegmentation
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  MNN: 39da287e4e82428453063dfa750f8e09e3efbb47
+  MNNFaceDetection: 813d58f3334d65552026890f21912f6e51f5e2e8
+  MNNHandGestureDetection: b6abd9d87f935d1de25d35baf9712ea8492c3425
+  MNNKitCore: a596af76ee3ae51adadb50fb6f61e76d2cf90202
+  MNNPortraitSegmentation: b0d5a86fad7faea4c023cb795aee62978069fbb7
+
+PODFILE CHECKSUM: 0b077856a96c92d0b159009222a61c047f0d8b36
+
+COCOAPODS: 1.8.4

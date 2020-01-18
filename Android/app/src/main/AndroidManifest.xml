@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tsia.example.mnnkitdemo">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.alibaba.android.mnnkit.demo.PortraitSegmentationImageActivity"></activity>
+        <activity android:name="com.alibaba.android.mnnkit.demo.HandGestureDetectionImageActivity" />
+        <activity android:name="com.alibaba.android.mnnkit.demo.FaceDetectionImageActivity" />
+        <activity
+            android:name="com.alibaba.android.mnnkit.demo.PortraitSegmentationActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.alibaba.android.mnnkit.demo.HandGestureDetectionActivity" />
+        <activity
+            android:name="com.alibaba.android.mnnkit.demo.FaceDetectionActivity"
+            android:label="@string/title_activity_face_detection" />
+        <activity
+            android:name="com.alibaba.android.mnnkit.demo.VideoBaseActivity"
+            android:label="@string/title_activity_video_base" />
+        <activity android:name="com.alibaba.android.mnnkit.demo.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
