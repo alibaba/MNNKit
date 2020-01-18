@@ -27,8 +27,8 @@ public static void createInstanceAsync (Context context,  InstanceCreatedListene
 - data：输入的数据，如Camera回调的NV21数据
 - width：数据宽
 - height：数据高
-- format：data的[数据格式](#format)
-- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人像变为正向，请参考接入指南&Demo示例
+- format：data的[数据格式](#支持输入的数据格式)
+- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人像变为正向，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/Android/app/src/main/java/com/alibaba/android/mnnkit/demo/PortraitSegmentationActivity.java)
 - flipType：结果关键点镜像类型，目前只支持沿Y轴左右镜像（FLIP_Y），其他值设置无效
 
 ##### 返回值
@@ -61,7 +61,7 @@ public synchronized void release()
 
 #### 附：参数说明
 
-#####<span id="format">支持输入的数据格式</span>
+#####支持输入的数据格式
 
 ```java
 public enum MNNCVImageFormat {
@@ -106,7 +106,7 @@ public enum MNNCVImageFormat {
 ##### 参数
 
 - pixelBuffer：输入数据，CVPixelBufferRef格式
-- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考接入指南&Demo示例
+- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/PortraitSegmentation/PortraitSegmentationViewController.m)
 - outputFlipType：结果关键点镜像类型，目前只支持沿Y轴左右镜像（FLIP_Y），其他值设置无效
 - error：错误信息，如果是nil代表推理成功
 
@@ -139,8 +139,8 @@ public enum MNNCVImageFormat {
 - data：输入数据，通用数据表示为unsigned char数组
 - w：数据宽
 - h：数据高
-- format：data的[数据格式](#format)
-- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考接入指南&Demo示例
+- format：data的[数据格式](##支持输入的数据格式-1)
+- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&Demo示例
 - outputFlipType：结果关键点镜像类型，目前只支持沿Y轴左右镜像（FLIP_Y），其他值设置无效
 - error：错误信息，如果是nil代表推理成功
 

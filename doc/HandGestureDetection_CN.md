@@ -180,7 +180,7 @@ public class HandGestureDetectionReport {
 - data：输入数据，通用数据表示为unsigned char数组
 - w：数据宽
 - h：数据高
-- format：data的[数据格式](#支持输入的数据格式)
+- format：data的[数据格式](#支持输入的数据格式-1)
 - inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
 - outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
 - flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
@@ -218,6 +218,7 @@ typedef NS_ENUM(NSUInteger, MNNCVImageFormat) {
 ```objective-c
 @interface MNNHandGestureDetectionReport : NSObject
 /**
+label
  0：比心
  1：五指张开
  2：竖食指
