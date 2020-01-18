@@ -167,3 +167,4 @@ MNNKit Demo中涵盖了工程实践中所有问题的综合解法，如输入角
 
 ## License
 
+[MNN Kit Terms of Service](#MNN Kit Terms of Service 2019.12.19.docx)
