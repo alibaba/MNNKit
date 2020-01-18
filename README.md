@@ -1,2 +1,169 @@
-# MNN-Kit-Demo
-MNN Kit Demo
+# MNNKit
+
+## 简介
+
+MNNKit是基于端上推理引擎[MNN](https://github.com/alibaba/MNN)提供的系列应用层解决方案，它是由MNN团队在阿里系应用大规模业务实践后的成熟方案，MNNKit主要面向Android/iOS移动应用开发者，使其能快速、方便地将通用场景的AI能力直接部署到移动应用中，从而基于它开发各种各样的业务能力和玩法。
+
+- SDK开箱即用，接入方便，无需关心算法或模型
+- 阿里系业务沉淀的稳定模型和算法，历经双十一等重大项目，端侧由MNN提供可靠的运行环境
+- 高性能实时推理，不依赖于后端，更适合移动端应用场景
+
+## Demo快速体验
+
+### 1. 扫码安装
+
+#### Android
+
+![img](data:image/png;base64,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)
+
+### 2. 源码安装
+
+```
+git clone https://github.com/alibaba/MNNKit.git
+```
+
+#### Android
+
+1. 打开Android Studio，点击File->Open...，选择MNNKitDemo/Android目录
+2. Gradle sync成功后，点击Run安装运行到真机上（Demo中视频检测依赖摄像头输入）
+
+#### iOS
+
+```
+cd MNNKitDemo/iOS
+pod update
+open MNNKitDemo.xcworkspace
+```
+
+然后安装运行到真机上（Demo中视频检测依赖摄像头输入）
+
+
+
+## SDK安装
+
+### Kit依赖关系
+
+MNNKit SDK组织结构如下图：
+
+![未命名文件 (7)](/Users/tsia/Downloads/未命名文件 (7).png)
+
+从底向上分为三层：
+
+1. MNN引擎层，是[MNN](https://github.com/alibaba/MNN)开源库在Android/iOS上编译好的二进制包的Relase版本，提供端侧AI运行的环境。
+2. Core基础层，这一层主要抽象和封装与MNN c++接口调用粒度基本一致的上层API，iOS以OC接口提供，Android以Java接口提供（TODO）。同时也为上层SDK提供一些公共服务类或结构定义。
+3. 业务Kit层，人脸检测、手势识别等都属于具体的一种算法能力在上层的封装，这一层的SDK称为业务Kit SDK，其中封装了若干模型和对应的算法处理。往后业务Kit层会不断扩展更多实用的Kit SDK。
+
+### 安装
+
+业务Kit层SDK相互独立，向下关联依赖无需显式指定，只需根据自身需求选择集成的SDK和版本即可。
+
+| Kit SDK              | Android | iOS   |
+| -------------------- | ------- | ----- |
+| FaceDetection        | 0.0.2   | 0.0.1 |
+| HandGestureDetection | 0.0.2   | 0.0.1 |
+| PortraitSegmentation | 0.0.2   | 0.0.1 |
+
+#### Android
+
+- 系统最低API Level16（4.1版本）
+
+```groovy
+dependencies {
+    implementation 'com.alibaba.android.mnnkit:facedetection:0.0.2'
+    implementation 'com.alibaba.android.mnnkit:handgesturedetection:0.0.2'
+    implementation 'com.alibaba.android.mnnkit:portraitsegmentation:0.0.2'
+}
+```
+
+##### Proguard
+
+```
+-dontwarn com.alibaba.android.mnnkit.**
+-keep class com.alibaba.android.mnnkit.**{*;}
+```
+
+#### iOS
+
+- 系统最低版本ios 8.0
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios
+
+target 'MNNKitDemo' do
+    platform :ios, '8.0'
+    
+    # 人脸检测
+    pod 'MNNFaceDetection', '~> 0.0.1'
+    # 手势识别
+    pod 'MNNHandGestureDetection', '~> 0.0.1'
+    # 人像分割
+    pod 'MNNPortraitSegmentation', '~> 0.0.1'
+    
+end
+```
+
+##### Bitcode
+
+目前MNNKit SDK均不支持bitcode，应用集成时候需关闭bitcode选项。
+
+
+
+## API
+
+Kit的基本API只有三个，创建实例、推理、释放实例。使用流程也是按照这个顺序，如下图所示，其中推理时可输入视频、图片或其他格式的数据。
+
+![未命名文件 (1)](/Users/tsia/Downloads/未命名文件 (1).png)
+
+[人脸检测API]()
+
+手势识别API
+
+人像分割API
+
+
+
+## 接入指南
+
+MNNKit API中包含了inAngle和outAngle两个参数值，他们是用来做什么的？理解这个问题之前，我们不妨先了解下SDK处理的一般过程。
+
+### 处理过程
+
+如下是iOS和Android设备后置摄像头正向拍摄的场景，端上整个处理过程：
+
+![Slice 10](/Users/tsia/Downloads/Slice 10.png)
+
+#### 1. 设备预览和输出
+
+这部分是从Camera获取数据，作为SDK的输入；同时在设备前端，要正确的预览给用户。
+
+#### 2. SDK检测
+
+MNNKit SDK内部实现封装了算法的深度学习模型，运行在MNN引擎上，因此人脸检测也并非传统的图像处理，它有着机器学习所有的特性。算法在模型训练阶段使用的是正向的人脸数据集，因而这个模型只认识"正向"的人脸，如果输入是一张方向不对的人脸，可能就不会有检测结果，我们称之为"内容方向敏感"。MNNKit中人脸检测、手势识别、人像分割都属于"内容方向敏感"的类型。
+
+1. 在MNN引擎执行推理之前，需要对原始的输入做预处理，保证输入数据中的人脸为正向
+2. 推理完成后，产生了基于输入图像（预处理之后的）坐标系的关键点结果
+3. 为了上层渲染方便，SDK会把关键点坐标变换到和屏幕渲染坐标系相同的方向
+
+>  SDK参数中的inAngle参数就是用来控制将原始输入旋转到"内容正向"的角度，outAngle就是用来变换关键点坐标到屏幕渲染坐标系方向的角度！
+
+从上图中可以看出，iOS在后置正向的情况下的输入角度为0，输出角度为0；而安卓输入角度为90，输出角度为0。
+
+#### 3. 结果渲染
+
+SDK检测的结果是图像的特征描述，最简单的描述就是关键点的坐标，这些坐标都是在图像坐标系下产生的，也就是在最终输入到引擎的图片左上角为原点的坐标系下。比如输入的图像是1280*720，那么检测结果也是在这个坐标系下产生。
+
+工程应用中，最后的结果关键点要显示在用户屏幕上，前端会使用一个用来渲染的"画布"，它可以是一个UI上用来显示的视图或其他组件，画布的尺寸由应用根据视觉设计自己定义。画布的坐标系我们统称为渲染坐标系，这一步要做的就是将关键点坐标从头像坐标系转换到渲染坐标系。
+
+在SDK检测的最后一步，我们已经将关键点变换到和渲染坐标系相同的方向，因为两个坐标系的大小不一样，接下来只需要等比例映射坐标就行了。映射完后直接渲染到画布上，就完成了整个过程。
+
+### 工程实践参考
+
+上述我们以iOS和Android设备后置摄像头正向拍摄为例阐述，比较简单，实际的工程接入中，摄像头的正向角度会产生输出图像的角度，设备旋转会造成输出图片非内容正向，自动旋转开启会引起渲染坐标系的变化，等等，这些都是SDK之外工程上需要解决的问题。
+
+MNNKit Demo中涵盖了工程实践中所有问题的综合解法，如输入角度、摄像头预览、结果渲染、自动旋转等等，是工程接入的最佳实践参考。如果不熟悉该如何处理，请阅读Demo中的代码示例，相信所有的问题都可以迎刃而解。
+
+
+
+## License
+
