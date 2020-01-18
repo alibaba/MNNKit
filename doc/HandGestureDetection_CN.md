@@ -11,7 +11,7 @@
 
 #### 2. 手势
 
-![hand3](doc/hand_gesture.png)
+![hand3](hand_gesture.png)
 
 ## API
 

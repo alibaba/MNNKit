@@ -119,7 +119,7 @@ Kit的基本API只有三个，创建实例、推理、释放实例。使用流�
 
 [手势识别API](doc/HandGestureDetection_CN.md)
 
-人像分割API
+[人像分割API](doc/PortraitSegmentation_CN.md)
 
 
 

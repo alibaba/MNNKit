@@ -12,17 +12,17 @@
 
 106个关键点的分布如下：
 
-<img src="doc/face_points.png" alt="image.png" style="zoom:50%;" />
+<img src="face_points.png" alt="image.png" style="zoom:50%;" />
 
 人脸各区域关键点分布对应表：
 
-<img src="doc/face_point_map.png" alt="image.png" style="zoom:60%;" />
+<img src="face_point_map.png" alt="image.png" style="zoom:60%;" />
 
 #### 2. 欧拉角度
 
 即摇头（Yaw）、点头（Pitch）、歪头（Roll）的三个角度值
 
-![image.png](doc/face_ypr.png)
+![image.png](face_ypr.png)
 
 #### <span id="action">3. 人脸动作</span>
 
