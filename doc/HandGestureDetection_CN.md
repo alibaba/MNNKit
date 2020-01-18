@@ -43,14 +43,14 @@ public static void createInstanceAsync (Context context, HandCreateConfig create
 - data：输入的数据，如Camera回调的NV21数据
 - width：数据宽
 - height：数据高
-- format：data的[数据格式](#format)
-- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人手变为正向，请参考接入指南&Demo示例
-- outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考接入指南&Demo示例
-- flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践Demo示例
+- format：data的[数据格式](#支持输入的数据格式)
+- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人手变为正向，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/Android/app/src/main/java/com/alibaba/android/mnnkit/demo/HandGestureDetectionActivity.java)
+- outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/Android/app/src/main/java/com/alibaba/android/mnnkit/demo/HandGestureDetectionActivity.java)
+- flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践[Demo示例](https://github.com/alibaba/MNNKit/blob/master/Android/app/src/main/java/com/alibaba/android/mnnkit/demo/HandGestureDetectionActivity.java)
 
 ##### 返回值
 
-检测对象，可能包含对个人脸的检测结果，详见HandGestureDetectionReport
+检测对象，可能包含对个人脸的检测结果，详见[**HandGestureDetectionReport**](#handgesturedetectionreport)
 
 ```java
 public synchronized HandGestureDetectionReport[] inference(byte[] data, int width, int height, MNNCVImageFormat format, int inAngle, int outAngle, MNNFlipType flipType)
@@ -76,7 +76,7 @@ public synchronized void release()
 
 #### 附：参数说明
 
-##### <span id="format">支持输入的数据格式</span>
+##### 支持输入的数据格式
 
 ```java
 public enum MNNCVImageFormat {
@@ -148,9 +148,9 @@ public class HandGestureDetectionReport {
 ##### 参数
 
 - pixelBuffer：输入数据，CVPixelBufferRef格式
-- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考接入指南&Demo示例
-- outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考接入指南&Demo示例
-- flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践Demo示例
+- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
+- outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
+- flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
 - error：错误信息，如果是nil代表推理成功
 
 ##### 返回值
@@ -180,15 +180,15 @@ public class HandGestureDetectionReport {
 - data：输入数据，通用数据表示为unsigned char数组
 - w：数据宽
 - h：数据高
-- format：data的[数据格式](#format)
-- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考接入指南&Demo示例
-- outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考接入指南&Demo示例
-- flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践Demo示例
+- format：data的[数据格式](#支持输入的数据格式)
+- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
+- outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
+- flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
 - error：错误信息，如果是nil代表推理成功
 
 ##### 返回值
 
-检测结果对象，可能包含多个人脸检测的结果
+检测结果对象，可能包含多个手势检测的结果，详见[**MNNHandGestureDetectionReport**](#mnnhandgesturedetectionreport)
 
 ```objective-c
 - (NSArray<MNNHandGestureDetectionReport *> *)inference:(unsigned char*)data Width:(float)w Height:(float)h Format:(MNNCVImageFormat)format Angle:(float)inAngle OutAngle:(float)outAngle FlipType:(MNNFlipType)flipType error:(NSError *__autoreleasing *)error;
@@ -200,7 +200,7 @@ MNNHandGestureDetector实例生命周期结束后会自动触发相关内存的�
 
 #### 附：参数说明
 
-#####支持输入的数据格式
+##### 支持输入的数据格式
 
 ```objective-c
 typedef NS_ENUM(NSUInteger, MNNCVImageFormat) {
