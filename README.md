@@ -14,7 +14,7 @@ MNNKit是基于端上推理引擎[MNN](https://github.com/alibaba/MNN)提供的�
 
 #### Android
 
-![img](doc/qr_android.png)
+![安卓扫码安装](doc/qr_android.png)
 
 ### 2. 源码安装
 
@@ -45,7 +45,7 @@ open MNNKitDemo.xcworkspace
 
 MNNKit SDK组织结构如下图：
 
-![未命名文件 (7)](/Users/tsia/Downloads/未命名文件 (7).png)
+![SDK栈](doc/sdk_stack.png)
 
 从底向上分为三层：
 
@@ -113,7 +113,7 @@ end
 
 Kit的基本API只有三个，创建实例、推理、释放实例。使用流程也是按照这个顺序，如下图所示，其中推理时可输入视频、图片或其他格式的数据。
 
-![未命名文件 (1)](/Users/tsia/Downloads/未命名文件 (1).png)
+![api](doc/api_flow.png)
 
 [人脸检测API]()
 
@@ -131,7 +131,7 @@ MNNKit API中包含了inAngle和outAngle两个参数值，他们是用来做什�
 
 如下是iOS和Android设备后置摄像头正向拍摄的场景，端上整个处理过程：
 
-![Slice 10](/Users/tsia/Downloads/Slice 10.png)
+![process](doc/process_graph.png)
 
 #### 1. 设备预览和输出
 
