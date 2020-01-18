@@ -258,7 +258,7 @@ MNNFaceDetector实例生命周期结束后会自动触发相关内存的释放�
 
 ### 附：参数说明
 
-#####支持输入的数据格式
+##### 支持输入的数据格式
 
 ```objective-c
 typedef NS_ENUM(NSUInteger, MNNCVImageFormat) {
