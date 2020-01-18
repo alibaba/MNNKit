@@ -2,9 +2,9 @@
 
 人脸检测是MNNKit提供的AI解决方案SDK，在端上提供了高精度、实时、功能丰富的人脸检测能力，能满足各种基于人脸检测的业务场景。
 
-## 检测内容
+# 检测内容
 
-#### 1. 人脸基本信息
+### 1. 人脸基本信息
 
 - 人脸位置的矩形坐标
 - 106个关键点坐标（区分被遮挡的和未被遮挡的）
@@ -18,13 +18,13 @@
 
 <img src="face_point_map.png" alt="image.png" style="zoom:60%;" />
 
-#### 2. 欧拉角度
+### 2. 欧拉角度
 
 即摇头（Yaw）、点头（Pitch）、歪头（Roll）的三个角度值
 
 ![image.png](face_ypr.png)
 
-#### <span id="action">3. 人脸动作</span>
+### <span id="action">3. 人脸动作</span>
 
 目前包含5个人脸动作：
 
@@ -34,15 +34,15 @@
 4. 点头
 5. 扬眉
 
-## API
+# API
 
-### Android
+## Android
 
-#### 1. 创建实例
+### 1. 创建实例
 
 异步创建FaceDetector实例，主线程中回调。
 
-##### 参数
+#### 参数
 
 - context：上下文环境
 
@@ -55,11 +55,11 @@ public static void createInstanceAsync (Context context, FaceDetectorCreateConfi
 
 > 人脸检测包含检测和跟踪两个动作，检测就是找到人脸的位置和关键点，跟踪就是人脸移动时重新定位关键点的位置。视频模式下并不是每一帧都检测，默认每20帧检测一次，其余帧只做跟踪，适合视频流输入的场景；而图片模式下每一次调用都会进行检测，适合图片检测的场景。
 
-#### 2.1 推理数据
+### 2.1 推理数据
 
 通用数据的推理，支持多种数据格式输入。视频流检测场景中，可以使用摄像头的回调数据作为该接口的输入。
 
-##### 参数
+#### 参数
 
 - data：输入的数据，如Camera回调的NV21数据
 - width：数据宽
@@ -70,7 +70,7 @@ public static void createInstanceAsync (Context context, FaceDetectorCreateConfi
 - outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考接入指南&Demo示例
 - outputFlip：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践Demo示例
 
-##### 返回值
+#### 返回值
 
 检测对象，可能包含多个人脸的检测结果，详见FaceDetectionReport
 
@@ -78,7 +78,7 @@ public static void createInstanceAsync (Context context, FaceDetectorCreateConfi
 public synchronized FaceDetectionReport[] inference(byte[] data, int width, int height, MNNCVImageFormat format, long detectConfig, int inAngle, int outAngle,  MNNFlipType outputFlip)
 ```
 
-#### 2.2 推理图片
+### 2.2 推理图片
 
 Bitmap检测接口，除了输入数据为bitmap，其余参数一样。
 
@@ -88,7 +88,7 @@ Bitmap检测接口，除了输入数据为bitmap，其余参数一样。
 public synchronized FaceDetectionReport[] inference(Bitmap bitmap, long detectConfig, int inAngle, int outAngle, MNNFlipType outputFlip)
 ```
 
-#### 3. 释放
+### 3. 释放
 
 FaceDetector实例用完之后需要手动释放，否则会产生native的内存泄露。
 
@@ -96,9 +96,9 @@ FaceDetector实例用完之后需要手动释放，否则会产生native的内�
 public synchronized void release()
 ```
 
-#### 附：参数说明
+### 附：参数说明
 
-#####<span id="format">支持输入的数据格式</span>
+#### <span id="format">支持输入的数据格式</span>
 
 ```java
 public enum MNNCVImageFormat {
@@ -113,7 +113,7 @@ public enum MNNCVImageFormat {
 }
 ```
 
-##### <span id="detectConfig">detectConfig</span>
+#### <span id="detectConfig">detectConfig</span>
 
 detectConfig用来配置人脸检测时需要关注哪些[动作](#action)，一般在视频检测模式中使用，因为动作检测需要连续几帧的信息。
 
@@ -171,13 +171,13 @@ public class FaceDetectionReport {
 
 
 
-### iOS
+## iOS
 
-#### 1. 创建实例
+### 1. 创建实例
 
 异步创建MNNFaceDetector实例
 
-##### 参数
+#### 参数
 
 - createConfig：创建时的配置参数，可用来配置是视频检测还是图片检测
 - block：创建完成后的回调
@@ -195,11 +195,11 @@ public class FaceDetectionReport {
 
 > 人脸检测包含检测和跟踪两个动作，检测就是找到人脸的位置和关键点，跟踪就是人脸移动时重新定位关键点的位置。视频模式下并不是每一帧都检测，默认每20帧检测一次，其余帧只做跟踪，适合视频流输入的场景；而图片模式下每一次调用都会进行检测，适合图片检测的场景。
 
-#### 2.1 推理（PixelBuffer输入）
+### 2.1 推理（PixelBuffer输入）
 
 使用系统相机作为输入检测时可使用该接口
 
-##### 参数
+#### 参数
 
 - pixelBuffer：输入数据，CVPixelBufferRef格式
 - detectConfig：检测配置
@@ -208,7 +208,7 @@ public class FaceDetectionReport {
 - flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践Demo示例
 - error：错误信息，如果是nil代表推理成功
 
-##### 返回值
+#### 返回值
 
 检测结果对象，可能包含多个人脸检测的结果
 
@@ -216,7 +216,7 @@ public class FaceDetectionReport {
 - (NSArray<MNNFaceDetectionReport *> *)inference:(CVPixelBufferRef)pixelBuffer Config:(MNNFaceDetectConfig)detectConfig Angle:(float)inAngle OutAngle:(float)outAngle FlipType:(MNNFlipType)flipType error:(NSError *__autoreleasing *)error;
 ```
 
-#### 2.2 推理（UIImage输入）
+### 2.2 推理（UIImage输入）
 
 图片检测接口，除了输入数据为UIImage，其余参数一样。
 
@@ -226,11 +226,11 @@ public class FaceDetectionReport {
 - (NSArray<MNNFaceDetectionReport *> *)inferenceImage:(UIImage*)image Config:(MNNFaceDetectConfig)detectConfig Angle:(float)inAngle OutAngle:(float)outAngle FlipType:(MNNFlipType)flipType error:(NSError *__autoreleasing *)error;
 ```
 
-#### 2.3 推理（通用buffer数组输入）
+### 2.3 推理（通用buffer数组输入）
 
 通用数据的推理接口
 
-##### 参数
+#### 参数
 
 - data：输入数据，通用数据表示为unsigned char数组
 - w：数据宽
@@ -242,7 +242,7 @@ public class FaceDetectionReport {
 - flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践Demo示例
 - error：错误信息，如果是nil代表推理成功
 
-##### 返回值
+#### 返回值
 
 检测结果对象，可能包含多个人脸检测的结果
 
@@ -250,13 +250,13 @@ public class FaceDetectionReport {
 - (NSArray<MNNFaceDetectionReport *> *)inference:(unsigned char*)data Width:(float)w Height:(float)h Format:(MNNCVImageFormat)format Config:(MNNFaceDetectConfig)detectConfig Angle:(float)inAngle OutAngle:(float)outAngle FlipType:(MNNFlipType)flipType error:(NSError *__autoreleasing *)error;
 ```
 
-#### 3. 释放
+### 3. 释放
 
 MNNFaceDetector实例生命周期结束后会自动触发相关内存的释放，无需调用方手动释放
 
 
 
-#### 附：参数说明
+### 附：参数说明
 
 #####支持输入的数据格式
 
@@ -271,7 +271,7 @@ typedef NS_ENUM(NSUInteger, MNNCVImageFormat) {
 };
 ```
 
-##### detectConfig
+#### detectConfig
 
 detectConfig用来配置人脸检测时需要关注哪些[动作](#action)，一般在视频检测模式中使用，因为动作检测需要连续几帧的信息。
 
@@ -307,7 +307,7 @@ if ((faceAction & BROW_JUMP)!=0) {
 }
 ```
 
-##### MNNFaceDetectionReport
+#### MNNFaceDetectionReport
 
 ```objective-c
 @interface MNNFaceDetectionReport : NSObject
