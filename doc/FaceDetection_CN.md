@@ -66,7 +66,7 @@ public static void createInstanceAsync (Context context, FaceDetectorCreateConfi
 - height：数据高
 - format：data的[数据格式](#format)
 - detectConfig：[检测配置](#detectConfig)
-- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考接入指南&Demo示例
+- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/Android/app/src/main/java/com/alibaba/android/mnnkit/demo/FaceDetectionActivity.java)
 - outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考接入指南&Demo示例
 - outputFlip：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践Demo示例
 
