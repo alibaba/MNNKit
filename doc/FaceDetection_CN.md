@@ -64,15 +64,15 @@ public static void createInstanceAsync (Context context, FaceDetectorCreateConfi
 - data：输入的数据，如Camera回调的NV21数据
 - width：数据宽
 - height：数据高
-- format：data的[数据格式](#format)
-- detectConfig：[检测配置](#detectConfig)
+- format：data的[数据格式](#支持输入的数据格式)
+- detectConfig：[检测配置](#detectconfig)
 - inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/Android/app/src/main/java/com/alibaba/android/mnnkit/demo/FaceDetectionActivity.java)
-- outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考接入指南&Demo示例
-- outputFlip：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践Demo示例
+- outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/Android/app/src/main/java/com/alibaba/android/mnnkit/demo/FaceDetectionActivity.java)
+- outputFlip：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践[Demo示例](https://github.com/alibaba/MNNKit/blob/master/Android/app/src/main/java/com/alibaba/android/mnnkit/demo/FaceDetectionActivity.java)
 
 #### 返回值
 
-检测对象，可能包含多个人脸的检测结果，详见FaceDetectionReport
+检测对象，可能包含多个人脸的检测结果，详见[**FaceDetectionReport**](#facedetectionreport)
 
 ```java
 public synchronized FaceDetectionReport[] inference(byte[] data, int width, int height, MNNCVImageFormat format, long detectConfig, int inAngle, int outAngle,  MNNFlipType outputFlip)
@@ -98,7 +98,7 @@ public synchronized void release()
 
 ### 附：参数说明
 
-#### <span id="format">支持输入的数据格式</span>
+#### 支持输入的数据格式
 
 ```java
 public enum MNNCVImageFormat {
@@ -202,15 +202,15 @@ public class FaceDetectionReport {
 #### 参数
 
 - pixelBuffer：输入数据，CVPixelBufferRef格式
-- detectConfig：检测配置
-- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考接入指南&Demo示例
-- outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考接入指南&Demo示例
-- flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践Demo示例
+- detectConfig：[检测配置](#detectconfig-1)
+- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/FaceDetection/FaceDetectionViewController.m)
+- outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/FaceDetection/FaceDetectionViewController.m)
+- flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/FaceDetection/FaceDetectionViewController.m)
 - error：错误信息，如果是nil代表推理成功
 
 #### 返回值
 
-检测结果对象，可能包含多个人脸检测的结果
+检测结果对象，可能包含多个人脸检测的结果，详见[**MNNFaceDetectionReport**](#mnnfacedetectionreport)
 
 ```objective-c
 - (NSArray<MNNFaceDetectionReport *> *)inference:(CVPixelBufferRef)pixelBuffer Config:(MNNFaceDetectConfig)detectConfig Angle:(float)inAngle OutAngle:(float)outAngle FlipType:(MNNFlipType)flipType error:(NSError *__autoreleasing *)error;
@@ -235,16 +235,16 @@ public class FaceDetectionReport {
 - data：输入数据，通用数据表示为unsigned char数组
 - w：数据宽
 - h：数据高
-- format：data的[数据格式](#format)
-- detectConfig：检测配置
-- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考接入指南&Demo示例
-- outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考接入指南&Demo示例
-- flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践Demo示例
+- format：data的[数据格式](#支持输入的数据格式)
+- detectConfig：[检测配置](#detectconfig-1)
+- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/FaceDetection/FaceDetectionViewController.m)
+- outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/FaceDetection/FaceDetectionViewController.m)
+- flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/FaceDetection/FaceDetectionViewController.m)
 - error：错误信息，如果是nil代表推理成功
 
 #### 返回值
 
-检测结果对象，可能包含多个人脸检测的结果
+检测结果对象，可能包含多个人脸检测的结果，详见[**MNNFaceDetectionReport**](#mnnfacedetectionreport)
 
 ```objective-c
 - (NSArray<MNNFaceDetectionReport *> *)inference:(unsigned char*)data Width:(float)w Height:(float)h Format:(MNNCVImageFormat)format Config:(MNNFaceDetectConfig)detectConfig Angle:(float)inAngle OutAngle:(float)outAngle FlipType:(MNNFlipType)flipType error:(NSError *__autoreleasing *)error;
