@@ -5,6 +5,8 @@ platform :ios
 
 
 target 'MNNKitDemo' do
+  project './MNNKitDemo.xcodeproj'
+  
     platform :ios, '8.0'
     
     # 人脸检测
