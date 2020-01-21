@@ -299,11 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MNNKitDemo/Pods-MNNKitDemo-frameworks.sh\"\n";
@@ -332,11 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MNNKitDemo/Pods-MNNKitDemo-resources.sh\"\n";
