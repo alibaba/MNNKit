@@ -21,15 +21,6 @@ DEPENDENCIES:
   - MNNHandGestureDetection (~> 0.0.1)
   - MNNPortraitSegmentation (~> 0.0.1)
 
-SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - FMDB
-    - MNN
-    - MNNFaceDetection
-    - MNNHandGestureDetection
-    - MNNKitCore
-    - MNNPortraitSegmentation
-
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   MNN: 39da287e4e82428453063dfa750f8e09e3efbb47
@@ -40,4 +31,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 3f2b8fcb5bce2dde3a39104456e082dd1e84cfba
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.2.0
