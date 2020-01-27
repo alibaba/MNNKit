@@ -1,11 +1,12 @@
 # coding: utf-8
 source 'https://github.com/CocoaPods/Specs.git'
 
+include_official_source!
+
 platform :ios
 
 
 target 'MNNKitDemo' do
-  project './MNNKitDemo.xcodeproj'
   
     platform :ios, '8.0'
     
