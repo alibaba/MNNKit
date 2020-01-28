@@ -18,6 +18,14 @@ android {
             }
         }
     }
+    signingConfigs {
+        release {
+            storeFile file("release.keystore")
+            storePassword "mnnkit"
+            keyAlias "key0"
+            keyPassword "mnnkit"
+        }
+    }
     buildTypes {
         debug {
             ndk {
@@ -25,6 +33,7 @@ android {
             }
         }
         release {
+            signingConfig signingConfigs.release
             zipAlignEnabled true
             minifyEnabled true
             shrinkResources true
