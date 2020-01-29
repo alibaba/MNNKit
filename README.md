@@ -57,11 +57,11 @@ MNNKit SDK组织结构如下图：
 
 业务Kit层SDK相互独立，向下关联依赖无需显式指定，只需根据自身需求选择集成的SDK和版本即可。
 
-| Kit SDK              | Android | iOS   |
-| -------------------- | ------- | ----- |
-| FaceDetection        | 0.0.2   | 0.0.1 |
-| HandGestureDetection | 0.0.2   | 0.0.1 |
-| PortraitSegmentation | 0.0.2   | 0.0.1 |
+| Kit SDK              | Android | iOS   | License                                                      |
+| -------------------- | ------- | ----- | ------------------------------------------------------------ |
+| FaceDetection        | 0.0.2   | 0.0.1 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
+| HandGestureDetection | 0.0.2   | 0.0.1 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
+| PortraitSegmentation | 0.0.2   | 0.0.1 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
 
 #### Android
 
@@ -167,4 +167,5 @@ MNNKit Demo中涵盖了工程实践中所有问题的综合解法，如输入角
 
 ## License
 
-[MNN Kit Terms of Service](https://github.com/alibaba/MNNKit/blob/master/MNN%20Kit%20Terms%20of%20Service%202019.12.19.docx)
+当您在软件中使用MNNKit相关SDK时，默认您已经阅读并同意协议[《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license)
+
