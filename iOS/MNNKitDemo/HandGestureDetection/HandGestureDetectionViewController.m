@@ -31,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setTitle:@"手势检测"];
+    [self setTitle:@"手势识别"];
     
     // 耗时ms
     _lbCostTime = [[UILabel alloc]initWithFrame:CGRectMake(10, 74, 100, 40)];
