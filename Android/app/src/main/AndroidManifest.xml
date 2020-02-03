@@ -23,13 +23,15 @@
             android:name="com.alibaba.android.mnnkit.demo.PortraitSegmentationActivity"
             android:screenOrientation="portrait" />
         <activity android:name="com.alibaba.android.mnnkit.demo.HandGestureDetectionActivity" />
-        <activity
-            android:name="com.alibaba.android.mnnkit.demo.FaceDetectionActivity"
-            android:label="@string/title_activity_face_detection" />
+
         <activity
             android:name="com.alibaba.android.mnnkit.demo.VideoBaseActivity"
             android:label="@string/title_activity_video_base" />
-        <activity android:name="com.alibaba.android.mnnkit.demo.MainActivity">
+
+        <activity android:name="com.alibaba.android.mnnkit.demo.MainActivity" />
+
+        <activity android:name="com.alibaba.android.mnnkit.demo.FaceDetectionActivity"
+            android:label="MNNKit人脸检测">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
