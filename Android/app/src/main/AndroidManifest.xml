@@ -20,7 +20,7 @@
         <activity android:name="com.alibaba.android.mnnkit.demo.HandGestureDetectionImageActivity" />
         <activity android:name="com.alibaba.android.mnnkit.demo.FaceDetectionImageActivity" />
         <activity
-            android:name="com.alibaba.android.mnnkit.demo.PortraitSegmentationActivity"
+            android:name="com.alibaba.android.mnnkit.demo.MainActivity"
             android:screenOrientation="portrait" />
         <activity android:name="com.alibaba.android.mnnkit.demo.HandGestureDetectionActivity" />
         <activity
@@ -29,7 +29,8 @@
         <activity
             android:name="com.alibaba.android.mnnkit.demo.VideoBaseActivity"
             android:label="@string/title_activity_video_base" />
-        <activity android:name="com.alibaba.android.mnnkit.demo.MainActivity">
+
+        <activity android:name="com.alibaba.android.mnnkit.demo.PortraitSegmentationActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

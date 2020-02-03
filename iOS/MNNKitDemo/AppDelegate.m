@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "PortraitSegmentationViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +22,7 @@
     //初始化window
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    ViewController *vc = [[ViewController alloc]init];
+    PortraitSegmentationViewController *vc = [[PortraitSegmentationViewController alloc]init];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];;
     
     //设置window的rootViewController，向、相当于storyboard中箭头指向

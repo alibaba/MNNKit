@@ -50,6 +50,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setTitle:@"人像分割"];
+    
     CGSize currentPresetSize = [self sessionPresetToSize];
     
     self.detect_result = (float *)calloc(Mask_Width * Mask_Height, sizeof(float));
