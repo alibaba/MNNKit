@@ -8,23 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		37B638E044CDEA9E4D4F76D6 /* libPods-MNNKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5F667C3D14ADE130E534D3 /* libPods-MNNKitDemo.a */; };
-		7122B4EA23B34B7900589B5A /* HandGestureDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7122B4E923B34B7900589B5A /* HandGestureDetectionViewController.m */; };
-		7122B4ED23B35AE200589B5A /* HandGestureDetectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7122B4EC23B35AE200589B5A /* HandGestureDetectView.m */; };
 		7154218723CC5C27000F9D38 /* switch_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7154218523CC5C27000F9D38 /* switch_camera@2x.png */; };
 		7154218823CC5C27000F9D38 /* image_mode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7154218623CC5C27000F9D38 /* image_mode@2x.png */; };
 		7154218B23CC5D4A000F9D38 /* FaceDetectionImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7154218A23CC5D4A000F9D38 /* FaceDetectionImageViewController.m */; };
 		7154218F23CC5E2C000F9D38 /* face_girl.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7154218C23CC5E2C000F9D38 /* face_girl.JPG */; };
 		7154219023CC5E2C000F9D38 /* face_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7154218D23CC5E2C000F9D38 /* face_img.jpg */; };
 		7154219123CC5E2C000F9D38 /* portrait_girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7154218E23CC5E2C000F9D38 /* portrait_girl.jpg */; };
-		7154219423CC73A9000F9D38 /* HandGestureDetectionImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7154219323CC73A9000F9D38 /* HandGestureDetectionImageViewController.m */; };
-		7154219923CC86BF000F9D38 /* PortraitSegmentationImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7154219823CC86BF000F9D38 /* PortraitSegmentationImageViewController.m */; };
-		715B4E9B23B4882C001EC1AC /* PortraitSegmentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 715B4E9A23B4882C001EC1AC /* PortraitSegmentationViewController.m */; };
 		715B4EC323B48B27001EC1AC /* VideoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 715B4EC223B48B27001EC1AC /* VideoBaseViewController.m */; };
 		715B4EC623B48FBA001EC1AC /* VideoBaseDetectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 715B4EC523B48FBA001EC1AC /* VideoBaseDetectView.m */; };
 		717DC5D523B1FDD900836506 /* FaceDetectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 717DC5D423B1FDD900836506 /* FaceDetectView.m */; };
 		71E5A09B23B4D6D4009EB7CD /* portrait_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71E5A09A23B4D6D4009EB7CD /* portrait_bg.jpg */; };
 		71F7BDCD23B1C1CA00954E55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F7BDCC23B1C1CA00954E55 /* AppDelegate.m */; };
-		71F7BDD323B1C1CA00954E55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F7BDD223B1C1CA00954E55 /* ViewController.m */; };
 		71F7BDD823B1C1CB00954E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71F7BDD723B1C1CB00954E55 /* Assets.xcassets */; };
 		71F7BDDB23B1C1CB00954E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F7BDD923B1C1CB00954E55 /* LaunchScreen.storyboard */; };
 		71F7BDDE23B1C1CB00954E55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F7BDDD23B1C1CB00954E55 /* main.m */; };
@@ -45,10 +39,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7122B4E823B34B7900589B5A /* HandGestureDetectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandGestureDetectionViewController.h; sourceTree = "<group>"; };
-		7122B4E923B34B7900589B5A /* HandGestureDetectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandGestureDetectionViewController.m; sourceTree = "<group>"; };
-		7122B4EB23B35AE200589B5A /* HandGestureDetectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandGestureDetectView.h; sourceTree = "<group>"; };
-		7122B4EC23B35AE200589B5A /* HandGestureDetectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandGestureDetectView.m; sourceTree = "<group>"; };
 		7154216C23CC53CD000F9D38 /* TestFw.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TestFw.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TestFw-ctwmexsuyuzdogfitanrytpgbnjb/Build/Products/Debug-iphoneos/TestFw.framework"; sourceTree = "<group>"; };
 		7154217B23CC5726000F9D38 /* MNNFaceDetection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MNNFaceDetection.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MNNFaceDetection-ddmbuvlqefszwpckbdljxlxnmykk/Build/Products/Debug-iphoneos/MNNFaceDetection.framework"; sourceTree = "<group>"; };
 		7154217D23CC5745000F9D38 /* MNNFaceDetection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MNNFaceDetection.framework; sourceTree = "<group>"; };
@@ -59,12 +49,6 @@
 		7154218C23CC5E2C000F9D38 /* face_girl.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face_girl.JPG; sourceTree = "<group>"; };
 		7154218D23CC5E2C000F9D38 /* face_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face_img.jpg; sourceTree = "<group>"; };
 		7154218E23CC5E2C000F9D38 /* portrait_girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = portrait_girl.jpg; sourceTree = "<group>"; };
-		7154219223CC73A9000F9D38 /* HandGestureDetectionImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandGestureDetectionImageViewController.h; sourceTree = "<group>"; };
-		7154219323CC73A9000F9D38 /* HandGestureDetectionImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandGestureDetectionImageViewController.m; sourceTree = "<group>"; };
-		7154219723CC86BF000F9D38 /* PortraitSegmentationImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortraitSegmentationImageViewController.h; sourceTree = "<group>"; };
-		7154219823CC86BF000F9D38 /* PortraitSegmentationImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PortraitSegmentationImageViewController.m; sourceTree = "<group>"; };
-		715B4E9923B4882C001EC1AC /* PortraitSegmentationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PortraitSegmentationViewController.h; sourceTree = "<group>"; };
-		715B4E9A23B4882C001EC1AC /* PortraitSegmentationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PortraitSegmentationViewController.m; sourceTree = "<group>"; };
 		715B4EC123B48B27001EC1AC /* VideoBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoBaseViewController.h; sourceTree = "<group>"; };
 		715B4EC223B48B27001EC1AC /* VideoBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoBaseViewController.m; sourceTree = "<group>"; };
 		715B4EC423B48FBA001EC1AC /* VideoBaseDetectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoBaseDetectView.h; sourceTree = "<group>"; };
@@ -75,8 +59,6 @@
 		71F7BDC823B1C1CA00954E55 /* MNNKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MNNKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F7BDCB23B1C1CA00954E55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71F7BDCC23B1C1CA00954E55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		71F7BDD123B1C1CA00954E55 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		71F7BDD223B1C1CA00954E55 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		71F7BDD723B1C1CB00954E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71F7BDDA23B1C1CB00954E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71F7BDDC23B1C1CB00954E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,30 +89,6 @@
 				DDD1090D76EB9979B5F52150 /* Pods-MNNKitDemo.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		7148F82123B312410021233A /* HandGestureDetection */ = {
-			isa = PBXGroup;
-			children = (
-				7122B4E823B34B7900589B5A /* HandGestureDetectionViewController.h */,
-				7122B4E923B34B7900589B5A /* HandGestureDetectionViewController.m */,
-				7122B4EB23B35AE200589B5A /* HandGestureDetectView.h */,
-				7122B4EC23B35AE200589B5A /* HandGestureDetectView.m */,
-				7154219223CC73A9000F9D38 /* HandGestureDetectionImageViewController.h */,
-				7154219323CC73A9000F9D38 /* HandGestureDetectionImageViewController.m */,
-			);
-			path = HandGestureDetection;
-			sourceTree = "<group>";
-		};
-		715B4E9823B487B0001EC1AC /* PortraitSegmentation */ = {
-			isa = PBXGroup;
-			children = (
-				715B4E9923B4882C001EC1AC /* PortraitSegmentationViewController.h */,
-				715B4E9A23B4882C001EC1AC /* PortraitSegmentationViewController.m */,
-				7154219723CC86BF000F9D38 /* PortraitSegmentationImageViewController.h */,
-				7154219823CC86BF000F9D38 /* PortraitSegmentationImageViewController.m */,
-			);
-			path = PortraitSegmentation;
 			sourceTree = "<group>";
 		};
 		715B4EC723B49A1B001EC1AC /* Base */ = {
@@ -180,13 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				715B4EC723B49A1B001EC1AC /* Base */,
-				715B4E9823B487B0001EC1AC /* PortraitSegmentation */,
-				7148F82123B312410021233A /* HandGestureDetection */,
 				71F7BDE423B1E94400954E55 /* FaceDetection */,
 				71F7BDCB23B1C1CA00954E55 /* AppDelegate.h */,
 				71F7BDCC23B1C1CA00954E55 /* AppDelegate.m */,
-				71F7BDD123B1C1CA00954E55 /* ViewController.h */,
-				71F7BDD223B1C1CA00954E55 /* ViewController.m */,
 				71F7BDD723B1C1CB00954E55 /* Assets.xcassets */,
 				71F7BDD923B1C1CB00954E55 /* LaunchScreen.storyboard */,
 				71F7BDDC23B1C1CB00954E55 /* Info.plist */,
@@ -342,16 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7122B4ED23B35AE200589B5A /* HandGestureDetectView.m in Sources */,
-				715B4E9B23B4882C001EC1AC /* PortraitSegmentationViewController.m in Sources */,
 				717DC5D523B1FDD900836506 /* FaceDetectView.m in Sources */,
 				715B4EC623B48FBA001EC1AC /* VideoBaseDetectView.m in Sources */,
-				7122B4EA23B34B7900589B5A /* HandGestureDetectionViewController.m in Sources */,
 				71F7BDE723B1EB2700954E55 /* FaceDetectionViewController.m in Sources */,
-				71F7BDD323B1C1CA00954E55 /* ViewController.m in Sources */,
-				7154219423CC73A9000F9D38 /* HandGestureDetectionImageViewController.m in Sources */,
 				71F7BDCD23B1C1CA00954E55 /* AppDelegate.m in Sources */,
-				7154219923CC86BF000F9D38 /* PortraitSegmentationImageViewController.m in Sources */,
 				715B4EC323B48B27001EC1AC /* VideoBaseViewController.m in Sources */,
 				7154218B23CC5D4A000F9D38 /* FaceDetectionImageViewController.m in Sources */,
 				71F7BDDE23B1C1CB00954E55 /* main.m in Sources */,
