@@ -35,6 +35,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setTitle:@"人脸检测"];
+    
     // 点序
     _lbPointOrder = [[UILabel alloc] initWithFrame:CGRectMake(10, self.navigationbarHeight+4, 40, 40)];
     _lbPointOrder.textColor = [UIColor greenColor];
