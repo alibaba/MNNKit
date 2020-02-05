@@ -2,21 +2,21 @@
 
 ## 简介
 
-MNNKit is a series of application-layer solution based off the device inference engine [MNN](https://github.com/alibaba/MNN), it's a mature solution after being massively deployed by the MNN Team in real world schenarious by the MNNKit. MNNKit mainly focus on Android/iOS Application and enabled them to rapidly and conviniently deploy AI capabilities to their applications so they can develop all kinds of业务能力和玩法。
+MNNKit是基于端上推理引擎[MNN](https://github.com/alibaba/MNN)提供的系列应用层解决方案，它是由MNN团队在阿里系应用大规模业务实践后的成熟方案，MNNKit主要面向Android/iOS移动应用开发者，使其能快速、方便地将通用场景的AI能力直接部署到移动应用中，从而基于它开发各种各样的业务能力和玩法。
 
-- Usable out of the box. Easy to integrate and no prior knowledge of algorithm or model required.
-- Reliable model and algorithm heavily used and tested in Alibaba's mega-events like double eleven, powered by the stable execution backend MNN.
-- Backend-independnet high-performance real-time inference that suits the mobile scenario.
+- SDK开箱即用，接入方便，无需关心算法或模型
+- 阿里系业务沉淀的稳定模型和算法，历经双十一等重大项目，端侧由MNN提供可靠的运行环境
+- 高性能实时推理，不依赖于后端，更适合移动端应用场景
 
-## Hands-on Demo
+## Demo快速体验
 
-### 1. Install by scanning QR Code
+### 1. 扫码安装
 
 #### Android
 
-![QR Code](doc/qr_android.png)
+![安卓扫码安装](doc/qr_android.png)
 
-### 2. Install from source
+### 2. 源码安装
 
 ```
 git clone https://github.com/alibaba/MNNKit.git
@@ -24,8 +24,8 @@ git clone https://github.com/alibaba/MNNKit.git
 
 #### Android
 
-1. Open Android Studio，click File->Open... and choose the directory MNNKitDemo/Android
-2. After ``Gradle sync`` completed successfully, click ``Run`` to install it on the real device. (Video detection in the demo relies on Camera)
+1. 打开Android Studio，点击File->Open...，选择MNNKitDemo/Android目录
+2. Gradle sync成功后，点击Run安装运行到真机上（Demo中视频检测依赖摄像头输入）
 
 #### iOS
 
@@ -35,11 +35,11 @@ pod update
 open MNNKitDemo.xcworkspace
 ```
 
-And install and run on a real device. (Video detection in the demo relies on Camera)
+然后安装运行到真机上（Demo中视频检测依赖摄像头输入）
 
 
 
-## SDK Installation
+## SDK安装
 
 ### Kit依赖关系
 
@@ -92,14 +92,14 @@ platform :ios
 
 target 'MNNKitDemo' do
     platform :ios, '8.0'
-
+    
     # 人脸检测
     pod 'MNNFaceDetection', '~> 0.0.1'
     # 手势识别
     pod 'MNNHandGestureDetection', '~> 0.0.1'
     # 人像分割
     pod 'MNNPortraitSegmentation', '~> 0.0.1'
-
+    
 end
 ```
 
@@ -168,3 +168,4 @@ MNNKit Demo中涵盖了工程实践中所有问题的综合解法，如输入角
 ## License
 
 当您在软件中使用MNNKit相关SDK时，默认您已经阅读并同意协议[《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license)
+
