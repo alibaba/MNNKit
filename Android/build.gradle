@@ -19,6 +19,9 @@ allprojects {
         google()
         jcenter()
 //        maven { url "https://oss.jfrog.org/artifactory/oss-snapshot-local" }
+        mavenCentral()
+        mavenLocal()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
     }
 
 }
