@@ -69,7 +69,7 @@
     
     NSError *error = nil;
     NSTimeInterval startTime = [[NSDate date] timeIntervalSince1970];
-    NSArray<NSNumber*> *detectResult = [self.portraitSegmentor inferenceImage:self.image Angle:0 FlipType:FLIP_NONE error:&error];
+    NSArray<NSNumber*> *detectResult = [self.portraitSegmentor inferenceImage:self.image angle:0 flipType:FLIP_NONE error:&error];
     NSTimeInterval timeElapsed = [[NSDate date] timeIntervalSince1970] - startTime;
     
     self.lbTimeCost.text = [NSString stringWithFormat:@"%.2fms", timeElapsed*1000];

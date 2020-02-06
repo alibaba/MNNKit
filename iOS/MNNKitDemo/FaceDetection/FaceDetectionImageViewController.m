@@ -61,7 +61,7 @@
     // init face detector
     MNNFaceDetectorCreateConfig *createConfig = [[MNNFaceDetectorCreateConfig alloc] init];
     createConfig.detectMode = MNN_FACE_DETECT_MODE_IMAGE;
-    [MNNFaceDetector createInstanceAsync:createConfig Callback:^(NSError *error, MNNFaceDetector *faceDetector) {
+    [MNNFaceDetector createInstanceAsync:createConfig callback:^(NSError *error, MNNFaceDetector *faceDetector) {
         
         self.faceDetector = faceDetector;
     }];
@@ -77,7 +77,7 @@
     
     NSError *error = nil;
     NSTimeInterval startTime = [[NSDate date] timeIntervalSince1970];
-    NSArray<MNNFaceDetectionReport *> *reports = [self.faceDetector inferenceImage:self.image Config:0 Angle:0 OutAngle:0 FlipType:FLIP_NONE error:&error];
+    NSArray<MNNFaceDetectionReport *> *reports = [self.faceDetector inferenceImage:self.image config:0 angle:0 outAngle:0 flipType:FLIP_NONE error:&error];
     NSTimeInterval timeElapsed = [[NSDate date] timeIntervalSince1970] - startTime;
     
     self.lbTimeCost.text = [NSString stringWithFormat:@"%.2fms", timeElapsed*1000];

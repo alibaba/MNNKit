@@ -40,11 +40,6 @@ android {
 }
 
 
-repositories {
-    maven { url "https://oss.jfrog.org/artifactory/oss-snapshot-local" }
-
-}
-
 dependencies {
 //    implementation fileTree(dir: 'libs', include: ['*.aar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
@@ -54,9 +49,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation 'com.aliyun.openservices:aliyun-log-android-sdk:2.0.0'
-
     implementation 'com.alibaba.android.mnnkit:facedetection:0.0.2'
-    implementation 'com.alibaba.android.mnnkit:handgesturedetection:0.0.2'
-    implementation 'com.alibaba.android.mnnkit:portraitsegmentation:0.0.2'
+//    implementation 'com.alibaba.android.mnnkit:handgesturedetection:0.0.4-SNAPSHOT'
+//    implementation 'com.alibaba.android.mnnkit:portraitsegmentation:0.0.4-SNAPSHOT'
 }

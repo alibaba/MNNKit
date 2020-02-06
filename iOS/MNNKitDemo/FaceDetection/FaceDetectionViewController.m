@@ -58,7 +58,7 @@
     
     MNNFaceDetectorCreateConfig *createConfig = [[MNNFaceDetectorCreateConfig alloc] init];
     createConfig.detectMode = MNN_FACE_DETECT_MODE_VIDEO;
-    [MNNFaceDetector createInstanceAsync:createConfig Callback:^(NSError *error, MNNFaceDetector *net) {
+    [MNNFaceDetector createInstanceAsync:createConfig callback:^(NSError *error, MNNFaceDetector *net) {
         
         self.faceDetector = net;
     }];
@@ -90,7 +90,7 @@
     
     NSError *error = nil;
     NSTimeInterval startTime = [[NSDate date] timeIntervalSince1970];
-    NSArray<MNNFaceDetectionReport *> *detectResult = [self.faceDetector inference:CMSampleBufferGetImageBuffer(sampleBuffer) Config:detectConfig Angle:inAngle OutAngle:outAngle FlipType:FLIP_NONE error:&error];
+    NSArray<MNNFaceDetectionReport *> *detectResult = [self.faceDetector inference:CMSampleBufferGetImageBuffer(sampleBuffer) config:detectConfig angle:inAngle outAngle:outAngle flipType:FLIP_NONE error:&error];
     NSTimeInterval timeElapsed = [[NSDate date] timeIntervalSince1970] - startTime;
     
     if (error) {
