@@ -65,7 +65,7 @@ MNNKit SDK组织结构如下图：
 
 #### Android
 
-- 系统最低API Level16（4.1版本）
+- 系统最低API Level 16（4.1版本）
 
 ```groovy
 dependencies {
@@ -168,4 +168,3 @@ MNNKit Demo中涵盖了工程实践中所有问题的综合解法，如输入角
 ## License
 
 当您在软件中使用MNNKit相关SDK时，默认您已经阅读并同意协议[《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license)
-
