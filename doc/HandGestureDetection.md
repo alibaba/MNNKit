@@ -125,36 +125,38 @@ public class HandGestureDetectionReport {
 
 #### 1. Creating an Instance
 
-异步创建MNNHandGestureDetector实例
+Creating an ``MNNHandGestureDetector`` instance asynchronously
 
-##### 参数
+##### Arguments
 
-- config：创建时的配置参数，可用来配置是视频检测还是图片检测
-- block：创建完成后的回调
-- callbackQueue：指定回调的线程，如设置nil默认主线程中回调
+- config: Configuration arguments for creation that could be used to configure if it's being used for video creation and image creation.
+- block: Callback after construction is completed
+- callbackQueue: Thread for calling the callback. Default to main thread if this is nil.
 
 ```objective-c
 + (void)createInstanceAsync:(MNNHandGestureDetectorCreateConfig*)config Callback:(void(^)(NSError *error, MNNHandGestureDetector *handgestureDetector))block CallbackQueue:(dispatch_queue_t)callbackQueue;
 ```
 
-默认主线程中回调，其他参数一样
-
 ```objective-c
 + (void)createInstanceAsync:(MNNHandGestureDetectorCreateConfig*)config Callback:(void(^)(NSError *error, MNNHandGestureDetector *handgestureDetector))block;
 ```
 
-> 检测器会同时进行人手检测和手势识别，人手检测包含检测和跟踪两个动作，检测就是找到人手的位置，跟踪就是人手移动时重新定位其位置。视频模式下并不是每一帧都检测，默认每20帧检测一次，其余帧只做跟踪，适合视频流输入的场景；而图片模式下每一次调用都会进行检测，适合图片检测的场景。
 
-#### 2.1 推理（PixelBuffer输入）
+#### 2.1 Inference (PixelBuffer Input)
 
-使用系统相机作为输入检测时可使用该接口
+This API could be used when using the system camera as input
 
-##### 参数
+##### Arguments
 
-- pixelBuffer：输入数据，CVPixelBufferRef格式
-- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
-- outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
-- flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
+- pixelBuffer: Input data of format CVPixelBufferRef
+- inAngleInput: angle, the clock-wise rotation angle that's going to be applied on the input image. Upon rotation the hand should be in the top-to-bottom direction. Please refer to the [Integration Guide](https://github.com/alibaba/MNNKit#接入指南)&[Demo](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
+- outAngle: Output angle, the output angle that transforms the coordinate system of the raw output feature points to a coordinate system that could be used by the rendering system. Please refer to the [Integration Guide](https://github.com/alibaba/MNNKit#接入指南)&[Demo](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
+- flipType: Type of the flipping process applied on the resulting feature points:
+  - NONE (FLIP_NONE)
+  - X-axis flipping (FLIP_X)
+  - Y-axis flipping (FLIP_Y)
+  - Center flipping (FLIP_XY)
+Please reference to [Demo](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
 - error：错误信息，如果是nil代表推理成功
 
 ##### 返回值
