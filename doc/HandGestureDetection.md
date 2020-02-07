@@ -35,7 +35,7 @@ public static void createInstanceAsync (Context context, HandCreateConfig create
 
 #### 2.1 Perform Inference on Data Byte Array
 
-The generic data inference supports multiple format of data input. In a video stream detection scene, the camera's callback data could be used as the input to this API.
+The generic byte array data inference supports multiple data input formats. In the case of video stream detection, the camera's callback data could be used as the input to this API.
 
 ##### Arguments
 
