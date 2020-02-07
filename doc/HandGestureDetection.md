@@ -33,7 +33,7 @@ public static void createInstanceAsync (Context context, HandCreateConfig create
 ```
 > The detector will do Hand detection and HandGesture detection at the same time. The detection is to find the location of the hand and tracking is to relocate its location after the hand has moved. Under video mode the inference is detected by default every 20 frames instead of frame-by-frame and the rest of the frames are only used for tracking. Under image mode each call will trigger the inferencing process and suitale for image detection process.
 
-#### 2.1 Inference Data
+#### 2.1 Perform Inference on Data Byte Array
 
 The generic data inference supports multiple format of data input. In a video stream detection scene, the camera's callback data could be used as the input to this API.
 
