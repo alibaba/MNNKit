@@ -31,7 +31,7 @@ HandGestureDetector instances are created asynchronously and are called back in 
 ```java
 public static void createInstanceAsync (Context context, HandCreateConfig createConfig, InstanceCreatedListener<HandGestureDetector> listener)
 ```
-> The detector will do Hand detection and HandGesture detection at the same time. The detection is to find the location of the hand and tracking is to relocate its location after the hand has moved. Under video mode the inference is detected by default every 20 frames instead of frame-by-frame and the rest of the frames are only used for tracking. Under image mode each call will trigger the inferencing process and suitale for image detection process.
+> The detector will do hand detection and hand gesture detection at the same time. Hand detection includes detecting and tracking the hand. The detection is to find the location of the hand and tracking is to relocate its location after the hand has moved. In the video detecting mode, the inference is run (by default) every 20 frames instead of frame-by-frame and the rest of the frames are only used for tracking. In the image detecting mode, each frame will trigger the inference process and it is suitable for image detection scenarios.
 
 #### 2.1 Perform Inference on Data Byte Array
 
