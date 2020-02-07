@@ -1,6 +1,6 @@
 
 
-Gesture detection is a mobile AI solution SDK provided by MNNKit which provides accurate and real-time gesture detection and recognition capabilities. Application developers can develop AI / AR Applications with it.
+Gesture detection is a mobile AI solution SDK provided by MNNKit which provides accurate and real-time gesture detection and recognition capabilities. Application developers can develop AI / AR applications with it.
 
 ## Detection Content
 
