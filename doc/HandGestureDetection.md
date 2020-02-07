@@ -25,7 +25,7 @@ HandGestureDetector instances are created asynchronously and are called back in 
 
 - context：Context
 
-- createConfig: Configuration arguments for creation that could be used to configure if it's being used for video creation and image creation.
+- createConfig: Configuration arguments for creating the detector.  The detector could be configured to detect in videos or images.
 - listener: Callback after construction is completed
 
 ```java
