@@ -1,6 +1,6 @@
 
 
-Gesture detection is a mobile AI solution SDK provided by MNNKit which provides accurate and real-time gesture detection and recognition capabilities. Application developers can develop AI / AR Applications with it.
+Gesture detection is a mobile AI solution SDK provided by MNNKit which provides accurate and real-time gesture detection and recognition capabilities. Application developers can develop AI / AR applications with it.
 
 ## Detection Content
 
@@ -25,17 +25,17 @@ HandGestureDetector instances are created asynchronously and are called back in 
 
 - context：Context
 
-- createConfig: Configuration arguments for creation that could be used to configure if it's being used for video creation and image creation.
+- createConfig: Configuration arguments for creating the detector.  The detector could be configured to detect in videos or images.
 - listener: Callback after construction is completed
 
 ```java
 public static void createInstanceAsync (Context context, HandCreateConfig createConfig, InstanceCreatedListener<HandGestureDetector> listener)
 ```
-> The detector will do Hand detection and HandGesture detection at the same time. The detection is to find the location of the hand and tracking is to relocate its location after the hand has moved. Under video mode the inference is detected by default every 20 frames instead of frame-by-frame and the rest of the frames are only used for tracking. Under image mode each call will trigger the inferencing process and suitale for image detection process.
+> The detector will do hand detection and hand gesture detection at the same time. Hand detection includes detecting and tracking the hand. The detection is to find the location of the hand and tracking is to relocate its location after the hand has moved. In the video detecting mode, the inference is run (by default) every 20 frames instead of frame-by-frame and the rest of the frames are only used for tracking. In the image detecting mode, each frame will trigger the inference process and it is suitable for image detection scenarios.
 
-#### 2.1 Inference Data
+#### 2.1 Perform Inference on Data Byte Array
 
-The generic data inference supports multiple format of data input. In a video stream detection scene, the camera's callback data could be used as the input to this API.
+The generic byte array data inference supports multiple data input formats. In the case of video stream detection, the camera's callback data could be used as the input to this API.
 
 ##### Arguments
 
