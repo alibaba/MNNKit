@@ -157,56 +157,61 @@ This API could be used when using the system camera as input
   - Y-axis flipping (FLIP_Y)
   - Center flipping (FLIP_XY)
 Please reference to [Demo](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
-- error：错误信息，如果是nil代表推理成功
+- error: Error message, if nil the inference succeeded
 
-##### 返回值
+##### Return value
 
-检测结果对象，可能包含多个人脸检测的结果
+Object detection result, might contains the results of multiple FaceDetections
 
 ```objective-c
 - (NSArray<MNNHandGestureDetectionReport *> *)inference:(CVPixelBufferRef)pixelBuffer Angle:(float)inAngle OutAngle:(float)outAngle  FlipType:(MNNFlipType)flipType error:(NSError *__autoreleasing *)error;
 ```
 
-#### 2.2 推理（UIImage输入）
+#### 2.2 Inference (UIImage input)
 
-图片检测接口，除了输入数据为UIImage，其余参数一样。
+Image detection input, arguments are the same as above except input data should be UIImage.
 
-注意：*如检测单个图片，创建时需配置为图片检测模式*。
+Note: *If detecting a single image, the SDK should have been configured as Image Detection Mode during construction*.
 
 ```objective-c
 - (NSArray<MNNHandGestureDetectionReport *> *)inferenceImage:(UIImage*)image Angle:(float)inAngle OutAngle:(float)outAngle FlipType:(MNNFlipType)flipType error:(NSError *__autoreleasing *)error;
 ```
 
-#### 2.3 推理（通用buffer数组输入）
+#### 2.3 Inference (Generic buffer input)
 
-通用数据的推理接口
+Inferencing API for generic data.
 
-##### 参数
+##### Arguments
 
-- data：输入数据，通用数据表示为unsigned char数组
-- w：数据宽
-- h：数据高
-- format：data的[数据格式](#支持输入的数据格式-1)
-- inAngle：输入角度，使输入图像顺时针旋转的角度，旋转后人脸变为正向，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
-- outAngle：输出角度，使结果关键点变换坐标系的角度，方便上层渲染使用，请参考[接入指南](https://github.com/alibaba/MNNKit#接入指南)&[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
-- flipType：使结果关键点镜像类型，不镜像（FLIP_NONE）、沿X轴镜像（FLIP_X）、沿Y轴镜像（FLIP_Y）、中心镜像（FLIP_XY），请参考工程实践[Demo示例](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
-- error：错误信息，如果是nil代表推理成功
+- data: Input data represented as unsigned char array.
+- w: Width
+- h: Height
+- format: Data Format of input data
+- inAngle: angle, the clock-wise rotation angle that's going to be applied on the input image. Upon rotation the hand should be in the top-to-bottom direction. Please refer to the [Integration Guide](https://github.com/alibaba/MNNKit#接入指南)&[Demo](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
+- outAngle: Output angle, the output angle that transforms the coordinate system of the raw output feature points to a coordinate system that could be used by the rendering system. Please refer to the [Integration Guide](https://github.com/alibaba/MNNKit#接入指南)&[Demo](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
+- flipType: Type of the flipping process applied on the resulting feature points:
+  - NONE (FLIP_NONE)
+  - X-axis flipping (FLIP_X)
+  - Y-axis flipping (FLIP_Y)
+  - Center flipping (FLIP_XY)
+Please reference to [Demo](https://github.com/alibaba/MNNKit/blob/master/iOS/MNNKitDemo/HandGestureDetection/HandGestureDetectionViewController.m)
+- error: Error message, if nil the inference succeeded
 
-##### 返回值
+##### Return value
 
-检测结果对象，可能包含多个手势检测的结果，详见[**MNNHandGestureDetectionReport**](#mnnhandgesturedetectionreport)
+Inference result object, might contain multiple HandGesture Detection results. Ref: [**MNNHandGestureDetectionReport**](#mnnhandgesturedetectionreport)
 
 ```objective-c
 - (NSArray<MNNHandGestureDetectionReport *> *)inference:(unsigned char*)data Width:(float)w Height:(float)h Format:(MNNCVImageFormat)format Angle:(float)inAngle OutAngle:(float)outAngle FlipType:(MNNFlipType)flipType error:(NSError *__autoreleasing *)error;
 ```
 
-#### 3. 释放
+#### 3. Release
 
-MNNHandGestureDetector实例生命周期结束后会自动触发相关内存的释放，无需调用方手动释放
+MNNHandGestureDetector automatically triggers related memory release when its lifetime ends.
 
-#### 附：参数说明
+#### Appendix: Arguments Description
 
-##### 支持输入的数据格式
+##### Supported input data formats
 
 ```objective-c
 typedef NS_ENUM(NSUInteger, MNNCVImageFormat) {
