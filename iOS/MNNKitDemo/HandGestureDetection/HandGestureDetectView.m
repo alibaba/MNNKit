@@ -56,7 +56,7 @@
         
         CGContextStrokeRect(ctx, CGRectMake(x, y, w, h));
         
-        NSString *str = [NSString stringWithFormat:@"%@:%f", [[self class] labelDesp:result.label], result.score];
+        NSString *str = [NSString stringWithFormat:@"%@:%f", [[self class] labelDesp:result.type], result.score];
         UIFont *font = [UIFont systemFontOfSize:16.0];
         NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
         [paragraphStyle setAlignment:NSTextAlignmentLeft];
@@ -72,26 +72,26 @@
     [self setNeedsDisplay];
 }
 
-+ (NSString*)labelDesp:(int)label {
++ (NSString*)labelDesp:(MNNHandGestureType)type {
     
     NSString *desc = @"其他";
-    switch (label) {
-        case 0:
+    switch (type) {
+        case MNN_HAND_GESTURE_TYPE_FINGER_HEART:
             desc = @"比心";
             break;
-        case 1:
+        case MNN_HAND_GESTURE_TYPE_HAND_OPEN:
             desc = @"手部张开";
             break;
-        case 2:
+        case MNN_HAND_GESTURE_TYPE_INDEX_FINGER:
             desc = @"竖食指";
             break;
-        case 3:
+        case MNN_HAND_GESTURE_TYPE_FIST:
             desc = @"拳头";
             break;
-        case 4:
+        case MNN_HAND_GESTURE_TYPE_THUMB_UP:
             desc = @"竖大拇指";
             break;
-        case 5:
+        case MNN_HAND_GESTURE_TYPE_OTHER:
             desc = @"其他";
             break;
             
