@@ -246,7 +246,7 @@ public class HandGestureDetectionActivity extends VideoBaseActivity {
                 canvas.drawLine(left * kx, bottom * ky,
                         left * kx, top * ky, LinePaint);
 
-                canvas.drawText(labelDesp(report.label) + report.score, left * kx, top * ky-10, LablePaint);
+                canvas.drawText(labelDesp(report.type) + report.score, left * kx, top * ky-10, LablePaint);
             }
 
         } catch (Throwable t) {
@@ -267,26 +267,27 @@ public class HandGestureDetectionActivity extends VideoBaseActivity {
         }
     }
 
-    String labelDesp(int label) {
+    String labelDesp(HandGestureDetectionReport.HandGestureType type) {
 
         String desc = "其他";
-        switch (label) {
-            case 0:
+
+        switch (type) {
+            case HAND_GESTURE_TYPE_FINGER_HEART:
                 desc = "比心";
                 break;
-            case 1:
+            case HAND_GESTURE_TYPE_HAND_OPEN:
                 desc = "手部张开";
                 break;
-            case 2:
+            case HAND_GESTURE_TYPE_INDEX_FINGER:
                 desc = "竖食指";
                 break;
-            case 3:
+            case HAND_GESTURE_TYPE_FIST:
                 desc = "拳头";
                 break;
-            case 4:
+            case HAND_GESTURE_TYPE_THUMB_UP:
                 desc = "竖大拇指";
                 break;
-            case 5:
+            case HAND_GESTURE_TYPE_OTHER:
                 desc = "其他";
                 break;
 

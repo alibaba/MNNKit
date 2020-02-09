@@ -49,7 +49,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation 'com.alibaba.android.mnnkit:facedetection:0.0.2'
-//    implementation 'com.alibaba.android.mnnkit:handgesturedetection:0.0.4-SNAPSHOT'
-//    implementation 'com.alibaba.android.mnnkit:portraitsegmentation:0.0.4-SNAPSHOT'
+
+    implementation 'com.alibaba.android.mnnkit:facedetection:0.0.4-SNAPSHOT'
+    implementation 'com.alibaba.android.mnnkit:handgesturedetection:0.0.4-SNAPSHOT'
+    implementation 'com.alibaba.android.mnnkit:portraitsegmentation:0.0.4-SNAPSHOT'
 }
