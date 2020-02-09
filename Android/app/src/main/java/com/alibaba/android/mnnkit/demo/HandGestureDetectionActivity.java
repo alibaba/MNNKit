@@ -212,10 +212,10 @@ public class HandGestureDetectionActivity extends VideoBaseActivity {
 
             for (int i=0;i<reports.length;i++) {
                 HandGestureDetectionReport report = reports[i];
-                float left = report.left;
-                float top = report.top;
-                float right = report.right;
-                float bottom = report.bottom;
+                float left = report.rect.left;
+                float top = report.rect.top;
+                float right = report.rect.right;
+                float bottom = report.rect.bottom;
 
                 float kx = 0.0f, ky = 0.0f;
 

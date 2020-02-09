@@ -148,17 +148,21 @@ public class HandGestureDetectionImageActivity extends AppCompatActivity {
 
             for (int i=0; i<reports.length; i++) {
                 HandGestureDetectionReport report = reports[i];
+                float left = report.rect.left;
+                float top = report.rect.top;
+                float right = report.rect.right;
+                float bottom = report.rect.bottom;
 
-                canvas.drawLine(report.left * kx, report.top * ky,
-                        report.right * kx, report.top * ky, LinePaint);
-                canvas.drawLine(report.right * kx, report.top * ky,
-                        report.right * kx, report.bottom * ky, LinePaint);
-                canvas.drawLine(report.right * kx, report.bottom * ky,
-                        report.left * kx, report.bottom * ky, LinePaint);
-                canvas.drawLine(report.left * kx, report.bottom * ky,
-                        report.left * kx, report.top * ky, LinePaint);
+                canvas.drawLine(left * kx, top * ky,
+                        right * kx, top * ky, LinePaint);
+                canvas.drawLine(right * kx, top * ky,
+                        right * kx, bottom * ky, LinePaint);
+                canvas.drawLine(right * kx, bottom * ky,
+                        left * kx, bottom * ky, LinePaint);
+                canvas.drawLine(left * kx, bottom * ky,
+                        left * kx, top * ky, LinePaint);
 
-                canvas.drawText(labelDesp(report.type) + report.score, report.left * kx, report.top * ky-10, LablePaint);
+                canvas.drawText(labelDesp(report.type) + report.score, left * kx, top * ky-10, LablePaint);
             }
 
             canvas.drawText(timeCost+" ms", 20, previewHeight+70, TextPaint);
