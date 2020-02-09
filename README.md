@@ -121,6 +121,28 @@ Kit的基本API只有三个，创建实例、推理、释放实例。使用流�
 
 [人像分割API](doc/PortraitSegmentation_CN.md)
 
+### 隐私说明
+
+默认情况下，MNNKit会收集SDK运行时的性能、稳定性等数据，帮助我们统计和分析问题，以在后续迭代中针对性地进行优化和改进。SDK不会收集其他任何无关的用户信息，相关协议请参考[license](license)。用户可以显式的调用API关闭该功能（不推荐）：
+
+#### Android
+
+```java
+/**
+ * enable/disable collection of statistical information. Enable by default.
+ * @param monitorEnable true or false
+ */
+public static void setMonitorEnable(boolean monitorEnable)
+```
+
+#### iOS
+
+```objective-c
+/// enable/disable collection of statistical information. Enable by default.
+/// @param enable 
++ (void)setMonitorEnable:(BOOL)enable;
+```
+
 
 
 ## 接入指南
