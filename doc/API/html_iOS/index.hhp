@@ -1,0 +1,77 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=MNNKit
+
+[WINDOWS]
+main="MNNKit","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+_m_n_n_face_detector_8h_source.html
+_m_n_n_hand_gesture_detector_8h_source.html
+_m_n_n_portrait_segmentor_8h_source.html
+_m_n_n_face_detector_8h.html
+_m_n_n_hand_gesture_detector_8h.html
+_m_n_n_portrait_segmentor_8h.html
+interface_m_n_n_face_detection_report.html
+interface_m_n_n_face_detection_report-members.html
+interface_m_n_n_face_detector.html
+interface_m_n_n_face_detector-members.html
+interface_m_n_n_face_detector_create_config.html
+interface_m_n_n_face_detector_create_config-members.html
+interface_m_n_n_hand_gesture_detection_report.html
+interface_m_n_n_hand_gesture_detection_report-members.html
+interface_m_n_n_hand_gesture_detector.html
+interface_m_n_n_hand_gesture_detector-members.html
+interface_m_n_n_hand_gesture_detector_create_config.html
+interface_m_n_n_hand_gesture_detector_create_config-members.html
+interface_m_n_n_portrait_segmentor.html
+interface_m_n_n_portrait_segmentor-members.html
+dir_afc4351b0ff58faa23b45bf1feab612f.html
+dir_e58c227fa8fd8ac4a075397c59ddf51c.html
+dir_2e043e6937ae22196292341472bf12a2.html
+dir_2c0e3c1d608b08fe3fb3b92cc06213c1.html
+dir_ff51bd0b7841751e6292791fdaa2b577.html
+dir_3aa9bd88010d07c3276bd22be45efe2a.html
+dir_322a70c84119dc49e54f565a3400f4c9.html
+dir_c7e855008d665c037ec22392504f50da.html
+dir_69366e82965ae46060acc4437989f3fa.html
+dir_b73b07f6bbd4e081d46f7df6c5a37ab5.html
+dir_b134f2d3165081d89f01a0cd96796a48.html
+dir_cb616b6757e5115efbc1cd70ea5b333d.html
+index.html
+annotated.html
+classes.html
+hierarchy.html
+functions.html
+functions_func.html
+functions_prop.html
+files.html
+globals.html
+globals_func.html
+globals_vars.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png
+interface_m_n_n_face_detection_report.png
+interface_m_n_n_face_detector.png
+interface_m_n_n_face_detector_create_config.png
+interface_m_n_n_hand_gesture_detection_report.png
+interface_m_n_n_hand_gesture_detector.png
+interface_m_n_n_hand_gesture_detector_create_config.png
+interface_m_n_n_portrait_segmentor.png

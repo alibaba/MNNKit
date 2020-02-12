@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html#a758fa222cae6f59b6a2bd8e4eaf45ea3"><param name="Name" value="createInstanceAsync:"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html#afba9d69080161aa2b737e6f278f2eca1"><param name="Name" value="createInstanceAsync:callback:"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html#afba9d69080161aa2b737e6f278f2eca1"><param name="Name" value="MNNFaceDetector"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html#a501c4236648844e2bd3b0be96a380508"><param name="Name" value="createInstanceAsync:callback:"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html#ab07d8dcc069e6431321e2daf04b2514a"><param name="Name" value="createInstanceAsync:callback:callbackQueue:"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html#ab07d8dcc069e6431321e2daf04b2514a"><param name="Name" value="MNNFaceDetector"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html#aa2fc5a8f170aa94f1301ce3279e2586f"><param name="Name" value="createInstanceAsync:callback:callbackQueue:"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html#ae007a3605773525a2078ea18b5dfb254"><param name="Name" value="createInstanceAsync:callbackQueue:"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector_create_config.html#af9b39fe67ad33dfe3dcc0dedebb3eab3"><param name="Name" value="detectMode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector_create_config.html#af9b39fe67ad33dfe3dcc0dedebb3eab3"><param name="Name" value="MNNFaceDetectorCreateConfig"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector_create_config.html#a7f1b08597e8f066893b6cba7b6cbacf2"><param name="Name" value="detectMode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#a02284790f79b88c53b4471d208a7dd6d"><param name="Name" value="faceAction"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#a4300fb0dcf830319eb70ab6075bedaea"><param name="Name" value="faceId"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detection_report.html#ad38f138530f2c1694b3a5297761886c9"><param name="Name" value="handID"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html#ad811582096cdda62b0b714b74eb0ce5d"><param name="Name" value="inference:angle:flipType:error:"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html#a272fba906817f1bcf60ddcad26707bdf"><param name="Name" value="inference:angle:outAngle:flipType:error:"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html#a602ad01ca588e7200d7c1222502ce2fc"><param name="Name" value="inference:config:angle:outAngle:flipType:error:"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html#a4828052f27c79881595db87ba42b1f79"><param name="Name" value="inference:width:height:format:angle:flipType:error:"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html#aa87ced2a686e480336d813de4e91b90f"><param name="Name" value="inference:width:height:format:angle:outAngle:flipType:error:"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html#a8c8a0086554b2aef9543d64c865013e0"><param name="Name" value="inference:width:height:format:config:angle:outAngle:flipType:error:"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html#af744cad5cc90a601e12d13709ae2b4ae"><param name="Name" value="inferenceImage:angle:flipType:error:"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html#a237472d128d9f7064db98377ac049c91"><param name="Name" value="inferenceImage:angle:outAngle:flipType:error:"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html#ab99ad14d38c89ced5dcb31b069f30e74"><param name="Name" value="inferenceImage:config:angle:outAngle:flipType:error:"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#ae353c9e54183dc673575c6613c5594f6"><param name="Name" value="keyPoints"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html"><param name="Name" value="MNNFaceDetectionReport"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html"><param name="Name" value="MNNFaceDetectionReport"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#a02284790f79b88c53b4471d208a7dd6d"><param name="Name" value="faceAction"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html"><param name="Name" value="MNNFaceDetectionReport"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#a4300fb0dcf830319eb70ab6075bedaea"><param name="Name" value="faceId"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html"><param name="Name" value="MNNFaceDetectionReport"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#ae353c9e54183dc673575c6613c5594f6"><param name="Name" value="keyPoints"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html"><param name="Name" value="MNNFaceDetectionReport"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#a43b4b3ca4305fdb009394d2e8d9cdede"><param name="Name" value="pitch"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html"><param name="Name" value="MNNFaceDetectionReport"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#a921dcc601d9c04acac1ef324bbfa19da"><param name="Name" value="rect"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html"><param name="Name" value="MNNFaceDetectionReport"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#ad43eb6f52b4a345cd82acff6286aee64"><param name="Name" value="roll"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html"><param name="Name" value="MNNFaceDetectionReport"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#a32eada6fc8df761231cfb518869bb867"><param name="Name" value="score"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html"><param name="Name" value="MNNFaceDetectionReport"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#a4b0409952be23206827fcf8d800dbdf0"><param name="Name" value="visibilities"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#ad1a381c18d5bae32ec97744e48aa61e0"><param name="Name" value="MNNFaceDetectionReport"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html"><param name="Name" value="MNNFaceDetector"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_face_detector_8h.html"><param name="Name" value="MNNFaceDetector.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_face_detector_8h.html#a57567af2cbd9dd6cc412f27cba05e8fc"><param name="Name" value="MNNKitErrorDomain"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_face_detector_8h.html"><param name="Name" value="MNNFaceDetector.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_face_detector_8h.html#a9835273e36af0cb70abe85ff24fe54f6"><param name="Name" value="NS_ENUM"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_face_detector_8h.html#acabc0c738da79634139649fdfe29ad1a"><param name="Name" value="MNNFaceDetector.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html"><param name="Name" value="MNNFaceDetector"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html#afba9d69080161aa2b737e6f278f2eca1"><param name="Name" value="createInstanceAsync:callback:"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html"><param name="Name" value="MNNFaceDetector"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html#ab07d8dcc069e6431321e2daf04b2514a"><param name="Name" value="createInstanceAsync:callback:callbackQueue:"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html"><param name="Name" value="MNNFaceDetector"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html#a602ad01ca588e7200d7c1222502ce2fc"><param name="Name" value="inference:config:angle:outAngle:flipType:error:"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html"><param name="Name" value="MNNFaceDetector"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html#a8c8a0086554b2aef9543d64c865013e0"><param name="Name" value="inference:width:height:format:config:angle:outAngle:flipType:error:"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector.html#ab99ad14d38c89ced5dcb31b069f30e74"><param name="Name" value="MNNFaceDetector"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector_create_config.html"><param name="Name" value="MNNFaceDetectorCreateConfig"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detector_create_config.html#af9b39fe67ad33dfe3dcc0dedebb3eab3"><param name="Name" value="MNNFaceDetectorCreateConfig"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detection_report.html"><param name="Name" value="MNNHandGestureDetectionReport"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detection_report.html"><param name="Name" value="MNNHandGestureDetectionReport"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detection_report.html#ad38f138530f2c1694b3a5297761886c9"><param name="Name" value="handID"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detection_report.html"><param name="Name" value="MNNHandGestureDetectionReport"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detection_report.html#ade9d78c56fe3d9f351d3e8c2c6d7c11f"><param name="Name" value="rect"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detection_report.html"><param name="Name" value="MNNHandGestureDetectionReport"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detection_report.html#a8356e3a300ac8999a40fb3cb39a3d11c"><param name="Name" value="score"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detection_report.html#a0d5be42cd580e2cc3aa170355dde0db1"><param name="Name" value="MNNHandGestureDetectionReport"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html"><param name="Name" value="MNNHandGestureDetector"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_hand_gesture_detector_8h.html"><param name="Name" value="MNNHandGestureDetector.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_hand_gesture_detector_8h.html#a57567af2cbd9dd6cc412f27cba05e8fc"><param name="Name" value="MNNKitErrorDomain"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_hand_gesture_detector_8h.html"><param name="Name" value="MNNHandGestureDetector.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_hand_gesture_detector_8h.html#ac4c3bfa9cbc3c95b78a2e21881031be8"><param name="Name" value="NS_ENUM"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_hand_gesture_detector_8h.html#aac837fcd0e477a2fe38f5eb80eb3d9e8"><param name="Name" value="MNNHandGestureDetector.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html"><param name="Name" value="MNNHandGestureDetector"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html#a501c4236648844e2bd3b0be96a380508"><param name="Name" value="createInstanceAsync:callback:"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html"><param name="Name" value="MNNHandGestureDetector"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html#aa2fc5a8f170aa94f1301ce3279e2586f"><param name="Name" value="createInstanceAsync:callback:callbackQueue:"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html"><param name="Name" value="MNNHandGestureDetector"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html#a272fba906817f1bcf60ddcad26707bdf"><param name="Name" value="inference:angle:outAngle:flipType:error:"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html"><param name="Name" value="MNNHandGestureDetector"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html#aa87ced2a686e480336d813de4e91b90f"><param name="Name" value="inference:width:height:format:angle:outAngle:flipType:error:"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector.html#a237472d128d9f7064db98377ac049c91"><param name="Name" value="MNNHandGestureDetector"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector_create_config.html"><param name="Name" value="MNNHandGestureDetectorCreateConfig"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detector_create_config.html#a7f1b08597e8f066893b6cba7b6cbacf2"><param name="Name" value="MNNHandGestureDetectorCreateConfig"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_face_detector_8h.html#a57567af2cbd9dd6cc412f27cba05e8fc"><param name="Name" value="MNNKitErrorDomain"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_face_detector_8h.html#a57567af2cbd9dd6cc412f27cba05e8fc"><param name="Name" value="MNNFaceDetector.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_hand_gesture_detector_8h.html#a57567af2cbd9dd6cc412f27cba05e8fc"><param name="Name" value="MNNKitErrorDomain"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_hand_gesture_detector_8h.html#a57567af2cbd9dd6cc412f27cba05e8fc"><param name="Name" value="MNNHandGestureDetector.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_portrait_segmentor_8h.html#a57567af2cbd9dd6cc412f27cba05e8fc"><param name="Name" value="MNNKitErrorDomain"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html"><param name="Name" value="MNNPortraitSegmentor"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_portrait_segmentor_8h.html#a57567af2cbd9dd6cc412f27cba05e8fc"><param name="Name" value="MNNPortraitSegmentor.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html"><param name="Name" value="MNNPortraitSegmentor"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html#a758fa222cae6f59b6a2bd8e4eaf45ea3"><param name="Name" value="createInstanceAsync:"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html"><param name="Name" value="MNNPortraitSegmentor"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html#ae007a3605773525a2078ea18b5dfb254"><param name="Name" value="createInstanceAsync:callbackQueue:"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html"><param name="Name" value="MNNPortraitSegmentor"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html#ad811582096cdda62b0b714b74eb0ce5d"><param name="Name" value="inference:angle:flipType:error:"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html"><param name="Name" value="MNNPortraitSegmentor"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html#a4828052f27c79881595db87ba42b1f79"><param name="Name" value="inference:width:height:format:angle:flipType:error:"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_portrait_segmentor.html#af744cad5cc90a601e12d13709ae2b4ae"><param name="Name" value="MNNPortraitSegmentor"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_face_detector_8h.html#acabc0c738da79634139649fdfe29ad1a"><param name="Name" value="NS_ENUM"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_face_detector_8h.html#acabc0c738da79634139649fdfe29ad1a"><param name="Name" value="MNNFaceDetector.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_face_detector_8h.html#a9835273e36af0cb70abe85ff24fe54f6"><param name="Name" value="NS_ENUM"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_face_detector_8h.html#a9835273e36af0cb70abe85ff24fe54f6"><param name="Name" value="MNNFaceDetector.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_hand_gesture_detector_8h.html#aac837fcd0e477a2fe38f5eb80eb3d9e8"><param name="Name" value="NS_ENUM"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_hand_gesture_detector_8h.html#aac837fcd0e477a2fe38f5eb80eb3d9e8"><param name="Name" value="MNNHandGestureDetector.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_m_n_n_hand_gesture_detector_8h.html#ac4c3bfa9cbc3c95b78a2e21881031be8"><param name="Name" value="NS_ENUM"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#a43b4b3ca4305fdb009394d2e8d9cdede"><param name="Name" value="pitch"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#a921dcc601d9c04acac1ef324bbfa19da"><param name="Name" value="rect"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#a921dcc601d9c04acac1ef324bbfa19da"><param name="Name" value="MNNFaceDetectionReport"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detection_report.html#ade9d78c56fe3d9f351d3e8c2c6d7c11f"><param name="Name" value="rect"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#ad43eb6f52b4a345cd82acff6286aee64"><param name="Name" value="roll"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#a32eada6fc8df761231cfb518869bb867"><param name="Name" value="score"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#a32eada6fc8df761231cfb518869bb867"><param name="Name" value="MNNFaceDetectionReport"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detection_report.html#a8356e3a300ac8999a40fb3cb39a3d11c"><param name="Name" value="score"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_hand_gesture_detection_report.html#a0d5be42cd580e2cc3aa170355dde0db1"><param name="Name" value="type"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#a4b0409952be23206827fcf8d800dbdf0"><param name="Name" value="visibilities"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_m_n_n_face_detection_report.html#ad1a381c18d5bae32ec97744e48aa61e0"><param name="Name" value="yaw"></OBJECT>
+</UL>
+</BODY>
+</HTML>
