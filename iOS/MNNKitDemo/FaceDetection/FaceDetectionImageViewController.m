@@ -77,7 +77,7 @@
     
     NSError *error = nil;
     NSTimeInterval startTime = [[NSDate date] timeIntervalSince1970];
-    NSArray<MNNFaceDetectionReport *> *reports = [self.faceDetector inferenceImage:self.image config:0 angle:0 outAngle:0 flipType:FLIP_NONE error:&error];
+    NSArray<MNNFaceDetectionReport *> *reports = [self.faceDetector inferenceWithImage:self.image config:0 angle:0 outAngle:0 flipType:FLIP_NONE error:&error];
     NSTimeInterval timeElapsed = [[NSDate date] timeIntervalSince1970] - startTime;
     
     self.lbTimeCost.text = [NSString stringWithFormat:@"%.2fms", timeElapsed*1000];

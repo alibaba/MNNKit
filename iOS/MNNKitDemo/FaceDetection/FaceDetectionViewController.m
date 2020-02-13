@@ -90,7 +90,7 @@
     
     NSError *error = nil;
     NSTimeInterval startTime = [[NSDate date] timeIntervalSince1970];
-    NSArray<MNNFaceDetectionReport *> *detectResult = [self.faceDetector inference:CMSampleBufferGetImageBuffer(sampleBuffer) config:detectConfig angle:inAngle outAngle:outAngle flipType:FLIP_NONE error:&error];
+    NSArray<MNNFaceDetectionReport *> *detectResult = [self.faceDetector inferenceWithPixelBuffer:CMSampleBufferGetImageBuffer(sampleBuffer) config:detectConfig angle:inAngle outAngle:outAngle flipType:FLIP_NONE error:&error];
     NSTimeInterval timeElapsed = [[NSDate date] timeIntervalSince1970] - startTime;
     
     if (error) {

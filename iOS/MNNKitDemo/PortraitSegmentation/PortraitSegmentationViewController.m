@@ -115,7 +115,7 @@
      */
     NSError *error = nil;
     NSTimeInterval startTime = [[NSDate date] timeIntervalSince1970];
-    NSArray<NSNumber*> *detectResult = [self.portraitSegmentor inference:CMSampleBufferGetImageBuffer(sampleBuffer) angle:inAngle flipType:FLIP_NONE error:&error];
+    NSArray<NSNumber*> *detectResult = [self.portraitSegmentor inferenceWithPixelBuffer:CMSampleBufferGetImageBuffer(sampleBuffer) angle:inAngle flipType:FLIP_NONE error:&error];
     NSTimeInterval timeElapsed = [[NSDate date] timeIntervalSince1970] - startTime;
 
     if (error) {
