@@ -10,22 +10,12 @@ target 'MNNKitDemo' do
     platform :ios, '8.0'
     
     # 人脸检测
-    pod 'MNNFaceDetection', '~> 0.0.1'
+   pod 'MNNFaceDetection', '~> 0.0.3'
     # 手势识别
-    pod 'MNNHandGestureDetection', '~> 0.0.1'
+    pod 'MNNHandGestureDetection', '~> 0.0.3'
     # 人像分割
-    pod 'MNNPortraitSegmentation', '~> 0.0.1'
+    pod 'MNNPortraitSegmentation', '~> 0.0.3'
     
-    
-#    pod 'MNNKitCore', :path=>"/Users/tsia/Documents/MNN/MNNKitWorkspace/MNNKitCore"
-#    
-#    
-#    pod 'MNNFaceDetection', :path=>"/Users/tsia/Documents/MNN/MNNKitWorkspace/MNNFaceDetection"
-#    
-#    pod 'MNNPortraitSegmentation', :path=>"/Users/tsia/Documents/MNN/MNNKitWorkspace/MNNPortraitSegmentation"
-#    
-#    pod 'MNNHandGestureDetection', :path=>"/Users/tsia/Documents/MNN/MNNKitWorkspace/MNNHandGestureDetection"
-
     
 
     
