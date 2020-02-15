@@ -21,7 +21,7 @@ allprojects {
 //        maven { url "https://oss.jfrog.org/artifactory/oss-snapshot-local" }
         mavenCentral()
         mavenLocal()
-        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+//        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
 
 //        maven { url "https://maven.aliyun.com/nexus/content/groups/public" }
     }

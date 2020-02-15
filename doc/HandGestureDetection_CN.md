@@ -11,7 +11,7 @@
 
 #### 2. 手势
 
-![hand3](hand_gesture.png)
+![hand3](https://mnnkit.oss-cn-hangzhou.aliyuncs.com/image/hand_gesture.png)
 
 ## API
 
