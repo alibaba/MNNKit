@@ -2,33 +2,42 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - MNN (0.2.1.7)
-  - MNNFaceDetection (0.0.1):
-    - MNN (= 0.2.1.7)
-    - MNNKitCore (~> 0.0.2)
-  - MNNHandGestureDetection (0.0.1):
-    - MNN (= 0.2.1.7)
-    - MNNKitCore (~> 0.0.2)
-  - MNNKitCore (0.0.2):
+  - MNN (0.2.1.8)
+  - MNNFaceDetection (0.0.3):
+    - MNN (= 0.2.1.8)
+    - MNNKitCore (~> 0.0.4)
+  - MNNHandGestureDetection (0.0.3):
+    - MNN (= 0.2.1.8)
+    - MNNKitCore (~> 0.0.4)
+  - MNNKitCore (0.0.4):
     - FMDB (= 2.7.5)
-    - MNN (= 0.2.1.7)
-  - MNNPortraitSegmentation (0.0.1):
-    - MNN (= 0.2.1.7)
-    - MNNKitCore (~> 0.0.2)
+    - MNN (= 0.2.1.8)
+  - MNNPortraitSegmentation (0.0.3):
+    - MNN (= 0.2.1.8)
+    - MNNKitCore (~> 0.0.4)
 
 DEPENDENCIES:
-  - MNNFaceDetection (~> 0.0.1)
-  - MNNHandGestureDetection (~> 0.0.1)
-  - MNNPortraitSegmentation (~> 0.0.1)
+  - MNNFaceDetection (~> 0.0.3)
+  - MNNHandGestureDetection (~> 0.0.3)
+  - MNNPortraitSegmentation (~> 0.0.3)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FMDB
+    - MNN
+    - MNNFaceDetection
+    - MNNHandGestureDetection
+    - MNNKitCore
+    - MNNPortraitSegmentation
 
 SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  MNN: 39da287e4e82428453063dfa750f8e09e3efbb47
-  MNNFaceDetection: 813d58f3334d65552026890f21912f6e51f5e2e8
-  MNNHandGestureDetection: b6abd9d87f935d1de25d35baf9712ea8492c3425
-  MNNKitCore: a596af76ee3ae51adadb50fb6f61e76d2cf90202
-  MNNPortraitSegmentation: b0d5a86fad7faea4c023cb795aee62978069fbb7
+  MNN: dc7a1f40de99586818a83264dcf39fe09b068212
+  MNNFaceDetection: 162e8d12dd5e52b0d5b9ac056acfc8afd69218c9
+  MNNHandGestureDetection: 14d2de4ce38fa05e26cb810576951c863fd25b3e
+  MNNKitCore: 8177d4cbf76d17fa607f4348fe8b0993a2e35d78
+  MNNPortraitSegmentation: ae488dc824c85771fa2b9ab5469aa7bb50951102
 
-PODFILE CHECKSUM: 10ec2b46bfcb400d4ab45319be4a54341315f523
+PODFILE CHECKSUM: 7b4330f5caeb406396a2f4093c3fb7eb3a3a0675
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.8.4
