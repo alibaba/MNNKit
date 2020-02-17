@@ -14,7 +14,7 @@ MNNKit是基于端上推理引擎[MNN](https://github.com/alibaba/MNN)提供的�
 
 #### Android
 
-![安卓扫码安装](doc/qr_android.png)
+![安卓扫码安装](https://mnnkit.oss-cn-hangzhou.aliyuncs.com/image/qr_android.png)
 
 ### 2. 源码安装
 
@@ -45,7 +45,7 @@ open MNNKitDemo.xcworkspace
 
 MNNKit SDK组织结构如下图：
 
-![SDK栈](doc/sdk_stack.png)
+![SDK栈](https://mnnkit.oss-cn-hangzhou.aliyuncs.com/image/sdk_stack.png)
 
 从底向上分为三层：
 
@@ -57,21 +57,40 @@ MNNKit SDK组织结构如下图：
 
 业务Kit层SDK相互独立，向下关联依赖无需显式指定，只需根据自身需求选择集成的SDK和版本即可。
 
-| Kit SDK              | Android | iOS   |
-| -------------------- | ------- | ----- |
-| FaceDetection        | 0.0.2   | 0.0.1 |
-| HandGestureDetection | 0.0.2   | 0.0.1 |
-| PortraitSegmentation | 0.0.2   | 0.0.1 |
+| Kit SDK              | Android | iOS   | License                                                      |
+| -------------------- | ------- | ----- | ------------------------------------------------------------ |
+| FaceDetection        | 0.0.4   | 0.0.3 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
+| HandGestureDetection | 0.0.4   | 0.0.3 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
+| PortraitSegmentation | 0.0.4   | 0.0.3 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
 
 #### Android
 
 - 系统最低API Level16（4.1版本）
+- MNNKit官方库托管在Maven Central上
+
+工程build.gradle配置maven仓库：
+
+```groovy
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        // 国内访问推荐使用阿里云镜像加速
+        maven { url "https://maven.aliyun.com/nexus/content/groups/public" }
+      	// Maven Central
+//        mavenCentral()
+//        mavenLocal()
+    }
+}
+```
+
+app的build.gradle添加依赖：
 
 ```groovy
 dependencies {
-    implementation 'com.alibaba.android.mnnkit:facedetection:0.0.2'
-    implementation 'com.alibaba.android.mnnkit:handgesturedetection:0.0.2'
-    implementation 'com.alibaba.android.mnnkit:portraitsegmentation:0.0.2'
+    implementation 'com.alibaba.android.mnnkit:facedetection:0.0.4'
+    implementation 'com.alibaba.android.mnnkit:handgesturedetection:0.0.4'
+    implementation 'com.alibaba.android.mnnkit:portraitsegmentation:0.0.4'
 }
 ```
 
@@ -94,11 +113,11 @@ target 'MNNKitDemo' do
     platform :ios, '8.0'
     
     # 人脸检测
-    pod 'MNNFaceDetection', '~> 0.0.1'
+    pod 'MNNFaceDetection', '~> 0.0.3'
     # 手势识别
-    pod 'MNNHandGestureDetection', '~> 0.0.1'
+    pod 'MNNHandGestureDetection', '~> 0.0.3'
     # 人像分割
-    pod 'MNNPortraitSegmentation', '~> 0.0.1'
+    pod 'MNNPortraitSegmentation', '~> 0.0.3'
     
 end
 ```
@@ -113,13 +132,35 @@ end
 
 Kit的基本API只有三个，创建实例、推理、释放实例。使用流程也是按照这个顺序，如下图所示，其中推理时可输入视频、图片或其他格式的数据。
 
-![api](doc/api_flow.png)
+![api](https://mnnkit.oss-cn-hangzhou.aliyuncs.com/image/api_flow.png)
 
 [人脸检测API](doc/FaceDetection_CN.md)
 
 [手势识别API](doc/HandGestureDetection_CN.md)
 
 [人像分割API](doc/PortraitSegmentation_CN.md)
+
+### 隐私说明
+
+默认情况下，MNNKit会收集SDK运行时的性能、稳定性等数据，帮助我们统计和分析问题，以在后续迭代中针对性地进行优化和改进。SDK不会收集其他任何无关的用户信息，相关协议请参考[license](license)。用户可以显式的调用API关闭该功能（不推荐）：
+
+#### Android
+
+```java
+/**
+ * enable/disable collection of statistical information. Enable by default.
+ * @param monitorEnable true or false
+ */
+public static void setMonitorEnable(boolean monitorEnable)
+```
+
+#### iOS
+
+```objective-c
+/// enable/disable collection of statistical information. Enable by default.
+/// @param enable 
++ (void)setMonitorEnable:(BOOL)enable;
+```
 
 
 
@@ -131,7 +172,7 @@ MNNKit API中包含了inAngle和outAngle两个参数值，他们是用来做什�
 
 如下是iOS和Android设备后置摄像头正向拍摄的场景，端上整个处理过程：
 
-![process](doc/process_graph.png)
+![process](https://mnnkit.oss-cn-hangzhou.aliyuncs.com/image/process_graph.png)
 
 #### 1. 设备预览和输出
 
@@ -167,4 +208,5 @@ MNNKit Demo中涵盖了工程实践中所有问题的综合解法，如输入角
 
 ## License
 
-[MNN Kit Terms of Service](https://github.com/alibaba/MNNKit/blob/master/MNN%20Kit%20Terms%20of%20Service%202019.12.19.docx)
+当您在软件中使用MNNKit相关SDK时，默认您已经阅读并同意协议[《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license)
+

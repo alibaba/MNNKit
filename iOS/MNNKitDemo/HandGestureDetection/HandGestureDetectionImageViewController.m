@@ -60,7 +60,7 @@
     // init hand gesture detector
     MNNHandGestureDetectorCreateConfig *config = [[MNNHandGestureDetectorCreateConfig alloc] init];
     config.detectMode = MNN_HAND_DETECT_MODE_IMAGE;
-    [MNNHandGestureDetector createInstanceAsync:config Callback:^(NSError *error, MNNHandGestureDetector *handgestureDetector) {
+    [MNNHandGestureDetector createInstanceAsync:config callback:^(NSError *error, MNNHandGestureDetector *handgestureDetector) {
         
         self.handGestureDetector = handgestureDetector;
     }];
@@ -76,7 +76,7 @@
     
     NSError *error = nil;
     NSTimeInterval startTime = [[NSDate date] timeIntervalSince1970];
-    NSArray<MNNHandGestureDetectionReport *> *reports = [self.handGestureDetector inferenceImage:self.image Angle:0 OutAngle:0 FlipType:FLIP_NONE error:&error];
+    NSArray<MNNHandGestureDetectionReport *> *reports = [self.handGestureDetector inferenceWithImage:self.image angle:0 outAngle:0 flipType:FLIP_NONE error:&error];
     NSTimeInterval timeElapsed = [[NSDate date] timeIntervalSince1970] - startTime;
     
     self.lbTimeCost.text = [NSString stringWithFormat:@"%.2fms", timeElapsed*1000];

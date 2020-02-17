@@ -300,10 +300,25 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MNNKitDemo/Pods-MNNKitDemo-frameworks.sh",
+				"${PODS_ROOT}/MNN/MNN.framework",
+				"${PODS_ROOT}/MNNFaceDetection/MNNFaceDetection.framework",
+				"${PODS_ROOT}/MNNHandGestureDetection/MNNHandGestureDetection.framework",
+				"${PODS_ROOT}/MNNKitCore/MNNKitCore.framework",
+				"${PODS_ROOT}/MNNPortraitSegmentation/MNNPortraitSegmentation.framework",
+			);
 			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MNN.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MNNFaceDetection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MNNHandGestureDetection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MNNKitCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MNNPortraitSegmentation.framework",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MNNKitDemo/Pods-MNNKitDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MNNKitDemo/Pods-MNNKitDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5C7DD1FAA93803E9BFC30BC9 /* [CP] Check Pods Manifest.lock */ = {
@@ -321,7 +336,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E3CE1F529B9317FBE5865C7B /* [CP] Copy Pods Resources */ = {
@@ -329,10 +344,27 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MNNKitDemo/Pods-MNNKitDemo-resources.sh",
+				"${PODS_ROOT}/MNNFaceDetection/MNNFaceDetection.framework/det.mnn",
+				"${PODS_ROOT}/MNNFaceDetection/MNNFaceDetection.framework/pts.mnn",
+				"${PODS_ROOT}/MNNHandGestureDetection/MNNHandGestureDetection.framework/gesture.mnn",
+				"${PODS_ROOT}/MNNHandGestureDetection/MNNHandGestureDetection.framework/handDetect.mnn",
+				"${PODS_ROOT}/MNNHandGestureDetection/MNNHandGestureDetection.framework/handTrack.mnn",
+				"${PODS_ROOT}/MNNPortraitSegmentation/MNNPortraitSegmentation.framework/portrait.mnn",
+			);
 			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/det.mnn",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pts.mnn",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gesture.mnn",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/handDetect.mnn",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/handTrack.mnn",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/portrait.mnn",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MNNKitDemo/Pods-MNNKitDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MNNKitDemo/Pods-MNNKitDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

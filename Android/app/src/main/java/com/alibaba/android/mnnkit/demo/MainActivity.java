@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.alibaba.android.mnnkit.monitor.MNNMonitor;
 import com.tsia.example.mnnkitdemo.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
             actionBar.setTitle("MNNKit Demo");
         }
 
+        MNNMonitor.setMonitorEnable(true);
     }
 
     public void onFaceDetection(View v) {

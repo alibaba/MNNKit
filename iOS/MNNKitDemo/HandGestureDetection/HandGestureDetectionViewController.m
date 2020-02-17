@@ -46,7 +46,7 @@
     
     MNNHandGestureDetectorCreateConfig *config = [[MNNHandGestureDetectorCreateConfig alloc] init];
     config.detectMode = MNN_HAND_DETECT_MODE_VIDEO;
-    [MNNHandGestureDetector createInstanceAsync:config Callback:^(NSError *error, MNNHandGestureDetector *handgestureDetector) {
+    [MNNHandGestureDetector createInstanceAsync:config callback:^(NSError *error, MNNHandGestureDetector *handgestureDetector) {
         
         self.handGestureDetector = handgestureDetector;
     }];
@@ -75,7 +75,7 @@
     
     NSError *error = nil;
     NSTimeInterval startTime = [[NSDate date] timeIntervalSince1970];
-    NSArray<MNNHandGestureDetectionReport *> *detectResult = [self.handGestureDetector inference:CMSampleBufferGetImageBuffer(sampleBuffer) Angle:inAngle OutAngle:outAngle FlipType:FLIP_NONE error:&error];
+    NSArray<MNNHandGestureDetectionReport *> *detectResult = [self.handGestureDetector inferenceWithPixelBuffer:CMSampleBufferGetImageBuffer(sampleBuffer) angle:inAngle outAngle:outAngle flipType:FLIP_NONE error:&error];
     NSTimeInterval timeElapsed = [[NSDate date] timeIntervalSince1970] - startTime;
     
     if (error) {

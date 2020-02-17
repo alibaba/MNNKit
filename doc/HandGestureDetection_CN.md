@@ -11,7 +11,7 @@
 
 #### 2. 手势
 
-![hand3](hand_gesture.png)
+![hand3](https://mnnkit.oss-cn-hangzhou.aliyuncs.com/image/hand_gesture.png)
 
 ## API
 
@@ -50,7 +50,7 @@ public static void createInstanceAsync (Context context, HandCreateConfig create
 
 ##### 返回值
 
-检测对象，可能包含对个人脸的检测结果，详见[**HandGestureDetectionReport**](#handgesturedetectionreport)
+检测对象，可能包含多个手势的检测结果，详见[**HandGestureDetectionReport**](#handgesturedetectionreport)
 
 ```java
 public synchronized HandGestureDetectionReport[] inference(byte[] data, int width, int height, MNNCVImageFormat format, int inAngle, int outAngle, MNNFlipType flipType)
@@ -95,22 +95,29 @@ public enum MNNCVImageFormat {
 
 ```java
 public class HandGestureDetectionReport {
-    /**
-     * 0：比心
-     * 1：五指张开
-     * 2：竖食指
-     * 3：握拳
-     * 4：竖大拇指
-     * 5：其他
-     */
-    public final int label;    // label of detected object
-    public final float score;  // score of dtected object
-    public final int id;       // id for each detected object
+  
+    public enum HandGestureType {
+        HAND_GESTURE_TYPE_FINGER_HEART(0), // 比心
+        HAND_GESTURE_TYPE_HAND_OPEN(1),    // 五指张开
+        HAND_GESTURE_TYPE_INDEX_FINGER(2), // 竖食指
+        HAND_GESTURE_TYPE_FIST(3),         // 握拳
+        HAND_GESTURE_TYPE_THUMB_UP(4),     // 竖大拇指
+        HAND_GESTURE_TYPE_OTHER(5);        // 其他
 
-    public final float left;
-    public final float top;
-    public final float right;
-    public final float bottom;
+        public int label;
+        HandGestureType(int t) {
+            label = t;
+        }
+    }
+
+    // 手势类型
+    public HandGestureType type;
+    // 手的区域
+    public RectF rect;
+
+    public final float score;   // score of dtected object
+    public final int id;        // id for each detected object
+
 		...
 }
 ```
@@ -155,7 +162,7 @@ public class HandGestureDetectionReport {
 
 ##### 返回值
 
-检测结果对象，可能包含多个人脸检测的结果
+检测结果对象，可能包含多个手势检测的结果，详见[**MNNHandGestureDetectionReport**](#mnnhandgesturedetectionreport)
 
 ```objective-c
 - (NSArray<MNNHandGestureDetectionReport *> *)inference:(CVPixelBufferRef)pixelBuffer Angle:(float)inAngle OutAngle:(float)outAngle  FlipType:(MNNFlipType)flipType error:(NSError *__autoreleasing *)error;
@@ -216,17 +223,18 @@ typedef NS_ENUM(NSUInteger, MNNCVImageFormat) {
 ##### MNNHandGestureDetectionReport
 
 ```objective-c
+typedef NS_ENUM(NSUInteger, MNNHandGestureType) {
+    MNN_HAND_GESTURE_TYPE_FINGER_HEART = 0, // 比心
+    MNN_HAND_GESTURE_TYPE_HAND_OPEN = 1,    // 五指张开
+    MNN_HAND_GESTURE_TYPE_INDEX_FINGER = 2, // 竖食指
+    MNN_HAND_GESTURE_TYPE_FIST = 3,         // 握拳
+    MNN_HAND_GESTURE_TYPE_THUMB_UP = 4,     // 竖大拇指
+    MNN_HAND_GESTURE_TYPE_OTHER = 5,        // 其他
+};
+
 @interface MNNHandGestureDetectionReport : NSObject
-/**
-label
- 0：比心
- 1：五指张开
- 2：竖食指
- 3：握拳
- 4：竖大拇指
- 5：其他
- */
-@property (nonatomic, assign) int label;
+
+@property (nonatomic, assign) MNNHandGestureType type;
 @property (nonatomic, assign) float score;
 @property (nonatomic, assign) int handID;
 @property (nonatomic, assign) CGRect rect;
