@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MNNKitDemo</string>
+    <string name="app_name">MNNKit</string>
     <string name="title_activity_video_base">VideoBaseActivity</string>
     <string name="title_activity_face_detection">FaceDetectionActivity</string>
 </resources>
