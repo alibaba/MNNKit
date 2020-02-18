@@ -89,8 +89,8 @@ app的build.gradle添加依赖：
 ```groovy
 dependencies {
     implementation 'com.alibaba.android.mnnkit:facedetection:0.0.4'
-    implementation 'com.alibaba.android.mnnkit:handgesturedetection:0.0.4'
-    implementation 'com.alibaba.android.mnnkit:portraitsegmentation:0.0.4'
+    implementation 'com.alibaba.android.mnnkit:handgesturedetection:0.0.5'
+    implementation 'com.alibaba.android.mnnkit:portraitsegmentation:0.0.5'
 }
 ```
 
