@@ -10,6 +10,7 @@
 #import "FaceDetectionViewController.h"
 #import "HandGestureDetectionViewController.h"
 #import "PortraitSegmentationViewController.h"
+#import <MNNKitCore/MNNMonitor.h>
 
 #define ScreenWidth                         [[UIScreen mainScreen] bounds].size.width
 #define ScreenHeight                        [[UIScreen mainScreen] bounds].size.height
@@ -45,6 +46,9 @@
     btnPortrait.frame = CGRectMake(12, CGRectGetMaxY(btnHand.frame)+18, ScreenWidth-12*2, 70);
     [self.view addSubview:btnPortrait];
     [btnPortrait addTarget:self action:@selector(onPortraitSegmentation:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    [MNNMonitor setMonitorEnable:YES];
 }
 
 - (void)onFaceDetection:(id)sender {
