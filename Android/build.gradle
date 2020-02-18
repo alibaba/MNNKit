@@ -21,8 +21,8 @@ allprojects {
         jcenter()
         // 国内访问推荐使用阿里云镜像
         maven { url "https://maven.aliyun.com/nexus/content/groups/public" }
-//        mavenCentral()
-//        mavenLocal()
+        mavenCentral()
+        mavenLocal()
 
 //        maven { url "https://oss.jfrog.org/artifactory/oss-snapshot-local" }
 //        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
