@@ -12,7 +12,7 @@
 
 106个关键点的分布如下：
 
-<img src="https://mnnkit.oss-cn-hangzhou.aliyuncs.com/image/face_points.png" style="zoom:50%;" />
+<img src="http://mnnkit.oss-cn-hangzhou.aliyuncs.com/image/face_points.png" style="zoom:50%;" />
 
 人脸各区域关键点分布对应表：
 
