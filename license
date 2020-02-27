@@ -11,22 +11,23 @@ This Agreement is effective as of the date Customer downloads and uses the MNN K
 1.5	“Source code” means software written in programming languages, including all comments and procedural code, in a form intelligible to trained programmers and capable of being translated into object or machine-readable code for operation on computer equipment through assembly or compiling.
 2.	License Grant
 2.1	Subject to your compliance with the terms and conditions of this Agreement, Taobao grants you a non-exclusive, non-transferrable and limited license, and allows you to use the “SDK” or “MNN Kit” to develop software or technology according to the terms in this Agreement.
-2.2	You have no right to sub-license or redistribute the “SDK” or “MNN Kit” to any third party.
+2.2	Unless otherwise provided in this Agreement, you have no right to sub-license or redistribute the “SDK” or “MNN Kit” to any third party.
 2.3	To make sure your usage of the “SDK” or “MNN Kit” complies with the terms and conditions in this Agreement, Taobao may collect usage statistical information via the “SDK” or “MNN Kit”. You may call the relevant APIs to stop the collection of such information.
 3.	Your Obligations to Taobao
 3.1	Comply with all terms and conditions in this Agreement，Taobao may provide to you documents regarding the proper use of the “SDK” or “MNN Kit”. You must comply with all usage restrictions on the “SDK” or “MNN Kit” provided in these documents.
 3.2	Only give the “SDK” or “MNN Kit” to your employees who need to access this information in order for you to comply with the Agreement. You must also inform these employees this information belongs to Taobao and is protected by Copyright law and require them to comply with the terms and conditions in this Agreement.
 3.3	Promptly notify Taobao of any problems and their solutions regarding the use of the “SDK” or “MNN Kit”.
-3.4	You must not delete, edit, add, remove, cover or tamper with the name of “SDK” or “MNN Kit” on the copies and media, or any notices of proprietary rights (including copyright notices and trademark notices) appeared in any copies, media or original packaging provided or requested by Taobao at any time.
-3.5	You will not and will not authorize any third party to do the following:
-3.5.1	Reverse compile the object code or reverse engineering or any other way to attempt to obtain the source code of the “SDK” or “MNN Kit”, or the underlying ideas, algorithms, structure or organization.
-3.5.2	Use the “SDK” or “MNN Kit” to interfere, damage, destroy or obtain unauthorized access to any third-party servers, network or any properties or services (including via development or distribution of an application)
-3.5.3	Directly or indirectly sub-license, resell, or redistribute the “SDK” or “MNN Kit” for any commercial or profit-seeking purposes.
-3.5.4	Build and sell your own software development kits or any other toolkits via packaging or extending the “SDK” or “MNN Kit” for any commercial or profit-seeking purposes.
-3.6	Comply with export laws, restrictions and regulations by the United Nations, the United States of America, Japan, the European Union or any foreign organizations or governments.
-3.7	You may not, anywhere in the world, use or register any trademarks, names or other symbols by Taobao
-3.8	You may not, anywhere in the world, disagree with any trademarks, names or other designated marks of Taobao used or authorized by Taobao.
-3.9	You may not sue Taobao for any copyright infringement caused by the derivative work of the “SDK” or “MNN Kit”, or claim copyrights of the derivative work from Taobao.
+3.4	You will not and will not authorize any third party to do the following:
+3.4.1	Reverse compile the object code or reverse engineering or any other way to attempt to obtain the source code of the “SDK” or “MNN Kit”, or the underlying ideas, algorithms, structure or organization.
+3.4.2	Use the “SDK” or “MNN Kit” to interfere, damage, destroy or obtain unauthorized access to any third-party servers, network or any properties or services (including via development or distribution of an application)
+3.4.3	Directly or indirectly sub-license, resell, or redistribute the “SDK” or “MNN Kit” for any commercial or profit-seeking purposes.
+3.4.4	Build and sell your own software development kits or any other toolkits via packaging or extending the “SDK” or “MNN Kit” for any commercial or profit-seeking purposes.
+3.5	If you package or extend the “SDK” or “MNN Kit” into your own development kit (or any other kit), for non-commercial or profit-seeking purposes, you should ensure the content of the relevant service agreement (such as the license content and obligations to Taobao) are consistent with this agreement;
+3.6	You must make a clear statement of all modified documents and indicate that you have changed the documents; and keep copies and media of the "SDK" or "MNN Kit Products" in any derivative works you distribute the "SDK" or "MNN Kit Product" name and any proprietary rights notices (including copyright, patent, trademark and provenance statements) of any copy, media or original provided by Taobao or requested by Taobao at any time; It is also not allowed to delete, modify, add, remove, obscure or tamper with the content of this right statement;
+3.7	Comply with export laws, restrictions and regulations by the United Nations, the United States of America, Japan, the European Union or any foreign organizations or governments.
+3.8	You may not, anywhere in the world, use or register any trademarks, names or other symbols by Taobao
+3.9	You may not, anywhere in the world, disagree with any trademarks, names or other designated marks of Taobao used or authorized by Taobao.
+3.10 You may not sue Taobao for any copyright infringement caused by the derivative work of the “SDK” or “MNN Kit”, or claim copyrights of the derivative work from Taobao.
 4.	Privacy and Information
 4.1	You agree that if you develop public facing applications using the “SDK” or “MNN Kit”, you will protect the end users’ privacy rights and legal rights. If the end users provide username, passwords and any other login information or personal information to you, you must inform the end user that such information is used by your application and you must provide privacy declarations and protections sufficient to meet legal requirements. If your application stores end user information or sensitive information, such information must be stored securely.
 5.	Third Party Applications
