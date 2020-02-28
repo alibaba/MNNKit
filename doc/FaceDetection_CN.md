@@ -328,3 +328,15 @@ if ((faceAction & BROW_JUMP)!=0) {
 
 @end
 ```
+
+### Citing
+
+```
+@inproceedings{lv2017deep,
+  title={A deep regression architecture with two-stage re-initialization for high performance facial landmark detection},
+  author={Lv, Jiangjing and Shao, Xiaohu and Xing, Junliang and Cheng, Cheng and Zhou, Xi},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={3317--3326},
+  year={2017}
+}
+```
