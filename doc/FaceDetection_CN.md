@@ -332,6 +332,15 @@ if ((faceAction & BROW_JUMP)!=0) {
 ### Citing
 
 ```
+@inproceedings{lv2017hierarchical,
+  title={Hierarchical bilinear network for high performance face detection},
+  author={Lv, Jiangjing and Shao, Xiaohu and Xing, Junliang and Liu, Pengcheng and Zhou, Xiangdong and Zhou, Xi},
+  booktitle={2017 IEEE International Conference on Image Processing (ICIP)},
+  pages={415--419},
+  year={2017},
+  organization={IEEE}
+}
+
 @inproceedings{lv2017deep,
   title={A deep regression architecture with two-stage re-initialization for high performance facial landmark detection},
   author={Lv, Jiangjing and Shao, Xiaohu and Xing, Junliang and Cheng, Cheng and Zhou, Xi},
