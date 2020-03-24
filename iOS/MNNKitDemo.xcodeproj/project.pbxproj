@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37B638E044CDEA9E4D4F76D6 /* libPods-MNNKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5F667C3D14ADE130E534D3 /* libPods-MNNKitDemo.a */; };
+		561D3A9B7FBA5140578B4E55 /* libPods-MNNKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2471BC52E2D3ED43191FAAC1 /* libPods-MNNKitDemo.a */; };
 		7122B4EA23B34B7900589B5A /* HandGestureDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7122B4E923B34B7900589B5A /* HandGestureDetectionViewController.m */; };
 		7122B4ED23B35AE200589B5A /* HandGestureDetectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7122B4EC23B35AE200589B5A /* HandGestureDetectView.m */; };
 		7154218723CC5C27000F9D38 /* switch_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7154218523CC5C27000F9D38 /* switch_camera@2x.png */; };
@@ -31,20 +31,8 @@
 		71F7BDE723B1EB2700954E55 /* FaceDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F7BDE623B1EB2700954E55 /* FaceDetectionViewController.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		7154218123CC57E4000F9D38 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		2471BC52E2D3ED43191FAAC1 /* libPods-MNNKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MNNKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7122B4E823B34B7900589B5A /* HandGestureDetectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandGestureDetectionViewController.h; sourceTree = "<group>"; };
 		7122B4E923B34B7900589B5A /* HandGestureDetectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandGestureDetectionViewController.m; sourceTree = "<group>"; };
 		7122B4EB23B35AE200589B5A /* HandGestureDetectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandGestureDetectView.h; sourceTree = "<group>"; };
@@ -84,7 +72,6 @@
 		71F7BDE523B1EB2700954E55 /* FaceDetectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceDetectionViewController.h; sourceTree = "<group>"; };
 		71F7BDE623B1EB2700954E55 /* FaceDetectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceDetectionViewController.m; sourceTree = "<group>"; };
 		A200ED847AF42ED1A1395E37 /* Pods-MNNKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MNNKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MNNKitDemo/Pods-MNNKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		CF5F667C3D14ADE130E534D3 /* libPods-MNNKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MNNKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD1090D76EB9979B5F52150 /* Pods-MNNKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MNNKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MNNKitDemo/Pods-MNNKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B638E044CDEA9E4D4F76D6 /* libPods-MNNKitDemo.a in Frameworks */,
+				561D3A9B7FBA5140578B4E55 /* libPods-MNNKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +201,7 @@
 				7154217B23CC5726000F9D38 /* MNNFaceDetection.framework */,
 				7154217D23CC5745000F9D38 /* MNNFaceDetection.framework */,
 				7154216C23CC53CD000F9D38 /* TestFw.framework */,
-				CF5F667C3D14ADE130E534D3 /* libPods-MNNKitDemo.a */,
+				2471BC52E2D3ED43191FAAC1 /* libPods-MNNKitDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,8 +218,6 @@
 				71F7BDC523B1C1CA00954E55 /* Frameworks */,
 				71F7BDC623B1C1CA00954E55 /* Resources */,
 				E3CE1F529B9317FBE5865C7B /* [CP] Copy Pods Resources */,
-				7154218123CC57E4000F9D38 /* Embed Frameworks */,
-				14AFE4FCBE104FEB6F4F098C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,32 +280,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14AFE4FCBE104FEB6F4F098C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MNNKitDemo/Pods-MNNKitDemo-frameworks.sh",
-				"${PODS_ROOT}/MNN/MNN.framework",
-				"${PODS_ROOT}/MNNFaceDetection/MNNFaceDetection.framework",
-				"${PODS_ROOT}/MNNHandGestureDetection/MNNHandGestureDetection.framework",
-				"${PODS_ROOT}/MNNKitCore/MNNKitCore.framework",
-				"${PODS_ROOT}/MNNPortraitSegmentation/MNNPortraitSegmentation.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MNN.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MNNFaceDetection.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MNNHandGestureDetection.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MNNKitCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MNNPortraitSegmentation.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MNNKitDemo/Pods-MNNKitDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5C7DD1FAA93803E9BFC30BC9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
