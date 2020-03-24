@@ -45,7 +45,7 @@ open MNNKitDemo.xcworkspace
 
 MNNKit SDK组织结构如下图：
 
-![SDK栈](https://mnnkit.oss-cn-hangzhou.aliyuncs.com/image/sdk_stack.png)
+![SDK栈](https://mnnkit.oss-cn-hangzhou.aliyuncs.com/image/sdk_stack.jpeg)
 
 从底向上分为三层：
 
@@ -59,9 +59,9 @@ MNNKit SDK组织结构如下图：
 
 | Kit SDK              | Android | iOS   | License                                                      |
 | -------------------- | ------- | ----- | ------------------------------------------------------------ |
-| FaceDetection        | 0.0.4   | 0.0.3 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
-| HandGestureDetection | 0.0.5   | 0.0.3 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
-| PortraitSegmentation | 0.0.5   | 0.0.3 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
+| FaceDetection        | 0.0.5   | 0.0.4 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
+| HandGestureDetection | 0.0.6   | 0.0.4 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
+| PortraitSegmentation | 0.0.6   | 0.0.4 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
 
 #### Android
 
@@ -88,9 +88,9 @@ app的build.gradle添加依赖：
 
 ```groovy
 dependencies {
-    implementation 'com.alibaba.android.mnnkit:facedetection:0.0.4'
-    implementation 'com.alibaba.android.mnnkit:handgesturedetection:0.0.5'
-    implementation 'com.alibaba.android.mnnkit:portraitsegmentation:0.0.5'
+    implementation 'com.alibaba.android.mnnkit:facedetection:0.0.5'
+    implementation 'com.alibaba.android.mnnkit:handgesturedetection:0.0.6'
+    implementation 'com.alibaba.android.mnnkit:portraitsegmentation:0.0.6'
 }
 ```
 
@@ -104,6 +104,7 @@ dependencies {
 #### iOS
 
 - 系统最低版本ios 8.0
+- 从0.0.4版本开始，MNNKit系列SDK均为静态库
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
@@ -113,11 +114,11 @@ target 'MNNKitDemo' do
     platform :ios, '8.0'
     
     # 人脸检测
-    pod 'MNNFaceDetection', '~> 0.0.3'
+    pod 'MNNFaceDetection', '~> 0.0.4'
     # 手势识别
-    pod 'MNNHandGestureDetection', '~> 0.0.3'
+    pod 'MNNHandGestureDetection', '~> 0.0.4'
     # 人像分割
-    pod 'MNNPortraitSegmentation', '~> 0.0.3'
+    pod 'MNNPortraitSegmentation', '~> 0.0.4'
     
 end
 ```
