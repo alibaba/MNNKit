@@ -14,7 +14,7 @@ MNNKit是基于端上推理引擎[MNN](https://github.com/alibaba/MNN)提供的�
 
 #### Android
 
-![安卓扫码安装](https://mnnkit.oss-cn-hangzhou.aliyuncs.com/image/qr_android1.png)
+![安卓扫码安装](https://mnnkit.oss-cn-hangzhou.aliyuncs.com/image/android_qrcode.png)
 
 ### 2. 源码安装
 
