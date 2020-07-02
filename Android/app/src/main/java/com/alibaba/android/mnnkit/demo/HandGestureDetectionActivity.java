@@ -184,7 +184,12 @@ public class HandGestureDetectionActivity extends VideoBaseActivity {
 
                 String timeCostText = "0 ms";
                 if (results!=null && results.length>0) {
-                    timeCostText = (System.currentTimeMillis() - start)+" ms";
+                    long eltime = (System.currentTimeMillis() - start);
+                    String tmpeltime = "";
+                    if (eltime != 0) {
+                        tmpeltime = +1000 / eltime + "fps ";
+                    }
+                    timeCostText = (eltime)+" ms" + tmpeltime;
                 }
 
                 mTimeCost.setText(timeCostText);

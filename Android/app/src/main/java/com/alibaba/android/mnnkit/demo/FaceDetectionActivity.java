@@ -238,19 +238,25 @@ public class FaceDetectionActivity extends VideoBaseActivity {
                     faceCount = results.length;
 
                     // time cost
-                    timeCostText = (System.currentTimeMillis() - start)+"ms";
+                    long eltime = (System.currentTimeMillis() - start);
+                    String tmpeltime = "";
+                    if (eltime != 0) {
+                        tmpeltime = +1000 / eltime + "fps ";
+                    }
+                    timeCostText = eltime + "ms " + tmpeltime;
                     // ypr
                     FaceDetectionReport firstReport = results[0];
-                    yprText = "yaw: " + firstReport.yaw + "\npitch: " + firstReport.pitch + "\nroll: " + firstReport.roll + "\n";
+                    yprText =
+                            "yaw: " + firstReport.yaw + "\npitch: " + firstReport.pitch + "\nroll: " + firstReport.roll + "\n";
 
-                    for (int i=0; i<results.length&&i<MAX_RESULT; i++) {
+                    for (int i = 0; i < results.length && i < MAX_RESULT; i++) {
                         // key points
-                        System.arraycopy(results[i].keyPoints, 0, keypts, i*106*2, 106*2);
+                        System.arraycopy(results[i].keyPoints, 0, keypts, i * 106 * 2, 106 * 2);
                         // face rect
-                        rects[i*4] = results[i].rect.left;
-                        rects[i*4+1] = results[i].rect.top;
-                        rects[i*4+2] = results[i].rect.right;
-                        rects[i*4+3] = results[i].rect.bottom;
+                        rects[i * 4] = results[i].rect.left;
+                        rects[i * 4 + 1] = results[i].rect.top;
+                        rects[i * 4 + 2] = results[i].rect.right;
+                        rects[i * 4 + 3] = results[i].rect.bottom;
                         // score
                         scores[i] = results[i].score;
                     }
