@@ -119,7 +119,7 @@ public class FaceDetectionActivity extends VideoBaseActivity {
 
     @Override
     String actionBarTitle() {
-        return "人脸检测";
+        return getString(R.string.face_detection);
     }
 
     @Override
@@ -135,7 +135,7 @@ public class FaceDetectionActivity extends VideoBaseActivity {
         drawView.getHolder().setFormat(PixelFormat.TRANSPARENT);
         mDrawSurfaceHolder = drawView.getHolder();
 
-        // 点序
+        // Order
         mOrderSwitch = findViewById(R.id.swPointOrder);
         mTimeCost = findViewById(R.id.costTime);
         mFaceAction = findViewById(R.id.faceAction);
@@ -286,19 +286,19 @@ public class FaceDetectionActivity extends VideoBaseActivity {
             if (!bActing) continue;
 
             if (entry.getKey().equals("HeadYaw")) {
-                actions.add("摇头");
+                actions.add("HeadYaw");
             }
             if (entry.getKey().equals("BrowJump")) {
-                actions.add("眉毛挑动");
+                actions.add("BrowJump");
             }
             if (entry.getKey().equals("EyeBlink")) {
-                actions.add("眨眼");
+                actions.add("EyeBlink");
             }
             if (entry.getKey().equals("MouthAh")) {
-                actions.add("嘴巴大张");
+                actions.add("MouthAh");
             }
             if (entry.getKey().equals("HeadPitch")) {
-                actions.add("点头");
+                actions.add("HeadPitch");
             }
         }
 
@@ -335,7 +335,7 @@ public class FaceDetectionActivity extends VideoBaseActivity {
 
             float kx = 0.0f, ky = 0.0f;
 
-            // 这里只写了摄像头正向为90/270度的一般情况，如果有其他情况，自行枚举
+            // 这里只写了摄像头正向为90/270度的一般情况，如果有other情况，自行枚举
             if(90 == cameraOrientation || 270 == cameraOrientation){
 
                 if (!screenAutoRotate()) {

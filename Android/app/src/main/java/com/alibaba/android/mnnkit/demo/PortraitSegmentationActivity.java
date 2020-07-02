@@ -172,7 +172,7 @@ public class PortraitSegmentationActivity extends VideoBaseActivity {
 
     @Override
     String actionBarTitle() {
-        return "人像分割";
+        return getString(R.string.portrait_segmentation);
     }
 
 
