@@ -22,7 +22,7 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback, C
 
     private static final int MINIMUM_PREVIEW_SIZE = 320;
 
-    static private Camera mCamera;
+    private static Camera mCamera;
     private static int mCameraId = Camera.CameraInfo.CAMERA_FACING_FRONT;
     private Camera.Parameters mParams;
     private Camera.Size mPreviewSize;
