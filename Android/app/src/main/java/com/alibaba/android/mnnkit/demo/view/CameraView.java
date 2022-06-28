@@ -22,7 +22,7 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback, C
 
     private static final int MINIMUM_PREVIEW_SIZE = 320;
 
-    private Camera mCamera;
+    private static Camera mCamera;
     private static int mCameraId = Camera.CameraInfo.CAMERA_FACING_FRONT;
     private Camera.Parameters mParams;
     private Camera.Size mPreviewSize;
@@ -38,6 +38,7 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback, C
     private int mDeviecAutoRotateAngle;
 
     public static void resetCameraId() {
+        releaseCamera();
         mCameraId = Camera.CameraInfo.CAMERA_FACING_FRONT;
     }
 
@@ -107,7 +108,7 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback, C
         mCamera.startPreview();
     }
 
-    private synchronized void releaseCamera() {
+    private static synchronized void releaseCamera() {
         if (mCamera != null) {
             try {
                 mCamera.setPreviewCallback(null);

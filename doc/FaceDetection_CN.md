@@ -332,6 +332,13 @@ if ((faceAction & BROW_JUMP)!=0) {
 ### Citing
 
 ```
+@inproceedings{shao2019robust,  
+  title={Robust Face Alignment via Deep Progressive Reinitialization and Adaptive Error-driven Learning},  
+  author={Shao, Xiaohu and Xing, Junliang and Lyu, Jiangjing and Zhou, Xiangdong and Shi, Yu and Maybank, Steve},  
+  journal={IEEE Transactions on Transactions on Pattern Analysis and Machine Intelligence},  
+  year={2021}  
+ }
+ 
 @inproceedings{lv2017hierarchical,
   title={Hierarchical bilinear network for high performance face detection},
   author={Lv, Jiangjing and Shao, Xiaohu and Xing, Junliang and Liu, Pengcheng and Zhou, Xiangdong and Zhou, Xi},
