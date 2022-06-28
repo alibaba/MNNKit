@@ -45,7 +45,7 @@ public class PortraitSegmentationImageActivity extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         if(actionBar != null){
-            actionBar.setTitle("人像分割-图片");
+            actionBar.setTitle("Portrait segmentation-图片");
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
@@ -145,7 +145,7 @@ public class PortraitSegmentationImageActivity extends AppCompatActivity {
     void doSegment() {
 
         if (mPortraitSegmentor==null) {
-            Toast.makeText(this, "正在初始化...", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.initializing, Toast.LENGTH_LONG).show();
             return;
         }
 

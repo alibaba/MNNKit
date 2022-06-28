@@ -17,7 +17,7 @@
         app:cardCornerRadius="4dp">
 
         <TextView
-            android:text="人脸检测"
+            android:text="@string/face_detection"
             android:textSize="18dp"
             android:padding="20dp"
             android:gravity="center"
@@ -37,7 +37,7 @@
         app:cardCornerRadius="4dp">
 
         <TextView
-            android:text="手势识别"
+            android:text="@string/gesture_recognition"
             android:textSize="18dp"
             android:padding="20dp"
             android:gravity="center"
@@ -57,7 +57,7 @@
         app:cardCornerRadius="4dp">
 
         <TextView
-            android:text="人像分割"
+            android:text="@string/portrait_segmentation"
             android:textSize="18dp"
             android:padding="20dp"
             android:gravity="center"

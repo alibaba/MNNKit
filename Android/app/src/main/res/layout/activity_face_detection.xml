@@ -40,13 +40,13 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:id="@+id/swPointOrder"
-            android:textOn="点序"
-            android:textOff="点序"
+            android:textOn="@string/order"
+            android:textOff="@string/order"
             android:textColor="#000000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18dp"
-            android:text="点序" />
+            android:text="Order" />
 
         <TextView
             android:id="@+id/costTime"
