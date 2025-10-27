@@ -3,7 +3,7 @@
 
 
 
-cmake_minimum_required(VERSION 3.4.1)
+cmake_minimum_required(VERSION 3.10.2)
 
 
 file(GLOB_RECURSE SRC src/main/jni/*.cpp src/main/cpp/*.c)
