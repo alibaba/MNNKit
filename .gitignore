@@ -257,4 +257,4 @@ Android/.DS_Store
 Android/build
 Android/captures
 Android/.externalNativeBuild
-
+Android/app/.cxx
