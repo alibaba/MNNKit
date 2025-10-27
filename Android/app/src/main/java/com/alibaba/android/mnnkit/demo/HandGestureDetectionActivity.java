@@ -184,7 +184,12 @@ public class HandGestureDetectionActivity extends VideoBaseActivity {
 
                 String timeCostText = "0 ms";
                 if (results!=null && results.length>0) {
-                    timeCostText = (System.currentTimeMillis() - start)+" ms";
+                    long eltime = (System.currentTimeMillis() - start);
+                    String tmpeltime = "";
+                    if (eltime != 0) {
+                        tmpeltime = +1000 / eltime + "fps ";
+                    }
+                    timeCostText = (eltime)+" ms" + tmpeltime;
                 }
 
                 mTimeCost.setText(timeCostText);
@@ -197,7 +202,7 @@ public class HandGestureDetectionActivity extends VideoBaseActivity {
 
     @Override
     String actionBarTitle() {
-        return "手势检测";
+        return getString(R.string.gesture_detection);
     }
 
     void drawLines(HandGestureDetectionReport[] reports, int cameraOrientation) {
@@ -219,7 +224,7 @@ public class HandGestureDetectionActivity extends VideoBaseActivity {
 
                 float kx = 0.0f, ky = 0.0f;
 
-                // 这里只写了摄像头正向为90/270度的一般情况，如果有其他情况，自行枚举
+                // 这里只写了摄像头正向为90/270度的一般情况，如果有other情况，自行枚举
                 if(90 == cameraOrientation || 270 == cameraOrientation){
 
                     if (!screenAutoRotate()) {
@@ -269,26 +274,26 @@ public class HandGestureDetectionActivity extends VideoBaseActivity {
 
     String labelDesp(HandGestureDetectionReport.HandGestureType type) {
 
-        String desc = "其他";
+        String desc = getString(R.string.other);
 
         switch (type) {
             case HAND_GESTURE_TYPE_FINGER_HEART:
-                desc = "比心";
+                desc = getString(R.string.love);
                 break;
             case HAND_GESTURE_TYPE_HAND_OPEN:
-                desc = "手部张开";
+                desc = getString(R.string.open_hand);
                 break;
             case HAND_GESTURE_TYPE_INDEX_FINGER:
-                desc = "竖食指";
+                desc = getString(R.string.index_finger);
                 break;
             case HAND_GESTURE_TYPE_FIST:
-                desc = "拳头";
+                desc = getString(R.string.fist);
                 break;
             case HAND_GESTURE_TYPE_THUMB_UP:
-                desc = "竖大拇指";
+                desc = getString(R.string.thumbs_up);
                 break;
             case HAND_GESTURE_TYPE_OTHER:
-                desc = "其他";
+                desc = getString(R.string.other);
                 break;
 
             default:

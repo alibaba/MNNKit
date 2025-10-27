@@ -155,7 +155,12 @@ public class PortraitSegmentationActivity extends VideoBaseActivity {
 
                 long start = System.currentTimeMillis();
                 float[] maskResults = mPortraitSegmentor.inference(data, width, height, MNNCVImageFormat.YUV_NV21, inAngle, mCameraView.isFrontCamera() ? MNNFlipType.FLIP_Y : MNNFlipType.FLIP_NONE);
-                mTimeCost.setText((System.currentTimeMillis() - start)+" ms");
+                long eltime = (System.currentTimeMillis() - start);
+                String tmpeltime = "";
+                if (eltime != 0) {
+                    tmpeltime = +1000 / eltime + "fps ";
+                }
+                mTimeCost.setText((eltime)+" ms" + tmpeltime);
 
                 if (maskResults==null || maskResults.length!=MASK_WIDTH*MASK_HEIGHT) {
                     return;
@@ -172,7 +177,7 @@ public class PortraitSegmentationActivity extends VideoBaseActivity {
 
     @Override
     String actionBarTitle() {
-        return "人像分割";
+        return getString(R.string.portrait_segmentation);
     }
 
 

@@ -43,7 +43,7 @@ public class HandGestureDetectionImageActivity extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         if(actionBar != null){
-            actionBar.setTitle("手势检测-图片");
+            actionBar.setTitle(R.string.gesture_detection_pictures);
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
@@ -104,7 +104,7 @@ public class HandGestureDetectionImageActivity extends AppCompatActivity {
 
     void doDetect() {
         if (mHandGestureDetector == null) {
-            Toast.makeText(this, "正在初始化...", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.initializing, Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -179,26 +179,26 @@ public class HandGestureDetectionImageActivity extends AppCompatActivity {
 
     String labelDesp(HandGestureDetectionReport.HandGestureType type) {
 
-        String desc = "其他";
+        String desc = getString(R.string.other);
 
         switch (type) {
             case HAND_GESTURE_TYPE_FINGER_HEART:
-                desc = "比心";
+                desc = getString(R.string.love);
                 break;
             case HAND_GESTURE_TYPE_HAND_OPEN:
-                desc = "手部张开";
+                desc = getString(R.string.open_hand);
                 break;
             case HAND_GESTURE_TYPE_INDEX_FINGER:
-                desc = "竖食指";
+                desc = getString(R.string.index_finger);
                 break;
             case HAND_GESTURE_TYPE_FIST:
-                desc = "拳头";
+                desc = getString(R.string.fist);
                 break;
             case HAND_GESTURE_TYPE_THUMB_UP:
-                desc = "竖大拇指";
+                desc = getString(R.string.thumbs_up);
                 break;
             case HAND_GESTURE_TYPE_OTHER:
-                desc = "其他";
+                desc = getString(R.string.other);
                 break;
 
             default:

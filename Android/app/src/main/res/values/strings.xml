@@ -2,4 +2,17 @@
     <string name="app_name">MNNKit Demo</string>
     <string name="title_activity_video_base">VideoBaseActivity</string>
     <string name="title_activity_face_detection">FaceDetectionActivity</string>
+    <string name="order">Order</string>
+    <string name="face_detection">Face Detection</string>
+    <string name="gesture_recognition">Gesture Recognition</string>
+    <string name="portrait_segmentation">Portrait segmentation</string>
+    <string name="gesture_detection_pictures">Gesture detection-pictures</string>
+    <string name="initializing">initializing...</string>
+    <string name="gesture_detection">Gesture detection</string>
+    <string name="love">Love</string>
+    <string name="open_hand">Open hand</string>
+    <string name="fist">Fist</string>
+    <string name="thumbs_up">Thumbs up</string>
+    <string name="index_finger">Vertical index finger</string>
+    <string name="other">other</string>
 </resources>

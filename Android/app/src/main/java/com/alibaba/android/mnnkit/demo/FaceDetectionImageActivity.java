@@ -44,7 +44,7 @@ public class FaceDetectionImageActivity extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         if(actionBar != null){
-            actionBar.setTitle("人脸检测-图片");
+            actionBar.setTitle("Face Detection-图片");
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
@@ -105,7 +105,7 @@ public class FaceDetectionImageActivity extends AppCompatActivity {
 
     void doDetect() {
         if (mFaceDetector==null) {
-            Toast.makeText(this, "正在初始化...", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.initializing, Toast.LENGTH_LONG).show();
             return;
         }
 
