@@ -59,9 +59,9 @@ MNNKit SDK组织结构如下图：
 
 | Kit SDK              | Android | iOS   | License                                                      |
 | -------------------- | ------- | ----- | ------------------------------------------------------------ |
-| FaceDetection        | 0.0.5   | 0.0.4 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
-| HandGestureDetection | 0.0.6   | 0.0.4 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
-| PortraitSegmentation | 0.0.6   | 0.0.4 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
+| FaceDetection        | 0.1.0   | 0.0.4 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
+| HandGestureDetection | 0.1.0   | 0.0.4 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
+| PortraitSegmentation | 0.1.0   | 0.0.4 | [《MNN Kit Terms of Service》](https://github.com/alibaba/MNNKitDemo/blob/master/license) |
 
 #### Android
 
@@ -88,9 +88,9 @@ app的build.gradle添加依赖：
 
 ```groovy
 dependencies {
-    implementation 'com.alibaba.android.mnnkit:facedetection:0.0.5'
-    implementation 'com.alibaba.android.mnnkit:handgesturedetection:0.0.6'
-    implementation 'com.alibaba.android.mnnkit:portraitsegmentation:0.0.6'
+    implementation 'com.alibaba.android.mnnkit:facedetection:0.1.0'
+    implementation 'com.alibaba.android.mnnkit:handgesturedetection:0.1.0'
+    implementation 'com.alibaba.android.mnnkit:portraitsegmentation:0.1.0'
 }
 ```
 
